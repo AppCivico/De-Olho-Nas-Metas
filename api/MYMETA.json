@@ -4,7 +4,7 @@
       "Renato CRON"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "ExtUtils::MakeMaker version 7.1001, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "unknown"
    ],
@@ -55,6 +55,7 @@
             "Catalyst::Runtime" : "5.90010",
             "Catalyst::TraitFor::Controller::DBIC::DoesPaging" : "0",
             "Catalyst::View::TT" : "0",
+            "CatalystX::Eta::Controller::REST" : "0",
             "Config::General" : "0",
             "Crypt::PasswdMD5" : "0",
             "DBD::Pg" : "0",
@@ -81,6 +82,7 @@
             "Geo::Coder::Google" : "0",
             "I18N::AcceptLanguage" : "0",
             "JSON" : "0",
+            "JSON::Any" : "0",
             "JSON::XS" : "0",
             "List::MoreUtils" : "0",
             "Log::Log4perl" : "0",
@@ -91,6 +93,7 @@
             "MooseX::NonMoose" : "0",
             "MooseX::Traits" : "0",
             "MooseX::Types::Email" : "0",
+            "MooseX::Types::JSON" : "0",
             "Spreadsheet::ParseExcel::Stream" : "0",
             "Spreadsheet::WriteExcel" : "0",
             "Spreadsheet::XLSX" : "0",
@@ -101,6 +104,7 @@
             "Test::Deep" : "0",
             "Test::More" : "0.88",
             "Text2URI" : "0",
+            "Text::CSV" : "0",
             "Text::CSV_XS" : "0",
             "Text::Iconv" : "0",
             "XML::Simple" : "0",

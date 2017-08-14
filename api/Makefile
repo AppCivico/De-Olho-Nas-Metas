@@ -1,7 +1,7 @@
 # This Makefile is for the SMM extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.98 (Revision: 69800) from the contents of
+# 7.1001 (Revision: 71001) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -19,7 +19,7 @@
 #     EXE_FILES => [q[script/acentos-regioes.pl], q[script/add_column_budget.pl], q[script/adjust_name_district.pl], q[script/change_first_character.pl], q[script/complement_subpref_v2.pl], q[script/crawler.pl], q[script/crawler_hernan.pl], q[script/create_goal-id_project.pl], q[script/deploy.pl], q[script/disqus_import.pl], q[script/export_indicators.pl], q[script/get_contract.pl], q[script/import_user_org.pl], q[script/importa_csv_budget.pl], q[script/latlongfromgcode.pl], q[script/milestone_type.pl], q[script/populate_budget_xls.pl], q[script/populate_company.pl], q[script/populate_types_project.pl], q[script/populateconselho.pl], q[script/populateproject.pl], q[script/populatesubpref.pl], q[script/populatesubpref_dist.pl], q[script/progress_project.pl], q[script/progress_project_csv.pl], q[script/project_milestone.pl], q[script/project_number.pl], q[script/project_types.pl], q[script/projects_milestones.pl], q[script/projects_types.pl], q[script/regionpopulate.pl], q[script/search_cep.pl], q[script/smm_cgi.pl], q[script/smm_create.pl], q[script/smm_fastcgi.pl], q[script/smm_server.pl], q[script/smm_test.pl], q[script/update-data-ps.pl], q[script/update_company_cnpj.pl], q[script/update_goalid_project_id.pl], q[script/upload_goal-id_project.pl]]
 #     NAME => q[SMM]
 #     NO_META => q[1]
-#     PREREQ_PM => { Template=>q[0], Text::Iconv=>q[0], DateTime::Format::Duration=>q[0], Math::Round=>q[0], Catalyst::Plugin::Session::Store::FastMmap=>q[0], Catalyst::Model::DBIC::Schema=>q[0], Text2URI=>q[0], CatalystX-Eta=>q[0], Catalyst::Plugin::ConfigLoader=>q[0], Data::Diver=>q[0], Test::Deep=>q[0], Template::Tiny=>q[0], XML::Simple=>q[0], Catalyst::Plugin::Session=>q[0], namespace::autoclean=>q[0], Text::CSV_XS=>q[0], Catalyst::Plugin::Session::State::Cookie=>q[0], FindBin::libs=>q[0], FindBin=>q[0], Email::MIME=>q[0], Data::Section::Simple=>q[0], Config::General=>q[0], Spreadsheet::WriteExcel=>q[0], ExtUtils::MakeMaker=>q[6.36], Spreadsheet::XLSX=>q[0], Catalyst::Plugin::Unicode::Encoding=>q[0], Catalyst::Plugin::Authorization::Roles=>q[0], DateTimeX::Easy=>q[0], Data::Manager=>q[0], Catalyst::Action::RenderView=>q[0], DBIx::Class::TimeStamp=>q[0], DBD::Pg=>q[0], DateTime::Duration=>q[0], Catalyst::Authentication::Store::DBIx::Class=>q[0], Catalyst::Plugin::I18N::DBI=>q[0], Catalyst::View::TT=>q[0], DBIx::Class::PassphraseColumn=>q[0], JSON::XS=>q[0], Log::Log4perl=>q[0], Math::Expression::Evaluator=>q[0], Catalyst::Runtime=>q[5.90010], MooseX::NonMoose=>q[0], MIME::Lite=>q[0], Catalyst::Plugin::Params::Nested=>q[0], List::MoreUtils=>q[0], Crypt::PasswdMD5=>q[0], Test::More=>q[0.88], String::Random=>q[0], DateTime::Format::Excel=>q[0], Statistics::Descriptive=>q[0], Geo::Coder::Google=>q[0], JSON=>q[0], Furl=>q[0], Email::Sender::Simple=>q[0], Digest::MD5=>q[0], Catalyst::Component::InstancePerContext=>q[0], Moose=>q[0], MooseX::Traits=>q[0], Catalyst::Restarter=>q[0], Email::Sender=>q[0], DateTime::Format::Pg=>q[0], I18N::AcceptLanguage=>q[0], Email::Sender::Transport::SMTP::TLS=>q[0], Catalyst::Plugin::Authentication=>q[0], Catalyst::Plugin::Static::Simple=>q[0], Spreadsheet::ParseExcel::Stream=>q[0], App::Sqitch=>q[0], Catalyst::Controller::REST=>q[0], Catalyst::Plugin::Assets=>q[0], Catalyst::TraitFor::Controller::DBIC::DoesPaging=>q[0], MooseX::Types::Email=>q[0], Data::Printer=>q[0], DBIx::Class::Schema::Loader=>q[0] }
+#     PREREQ_PM => { App::Sqitch=>q[0], Catalyst::Action::RenderView=>q[0], Catalyst::Authentication::Store::DBIx::Class=>q[0], Catalyst::Component::InstancePerContext=>q[0], Catalyst::Controller::REST=>q[0], Catalyst::Model::DBIC::Schema=>q[0], Catalyst::Plugin::Assets=>q[0], Catalyst::Plugin::Authentication=>q[0], Catalyst::Plugin::Authorization::Roles=>q[0], Catalyst::Plugin::ConfigLoader=>q[0], Catalyst::Plugin::I18N::DBI=>q[0], Catalyst::Plugin::Params::Nested=>q[0], Catalyst::Plugin::Session=>q[0], Catalyst::Plugin::Session::State::Cookie=>q[0], Catalyst::Plugin::Session::Store::FastMmap=>q[0], Catalyst::Plugin::Static::Simple=>q[0], Catalyst::Plugin::Unicode::Encoding=>q[0], Catalyst::Restarter=>q[0], Catalyst::Runtime=>q[5.90010], Catalyst::TraitFor::Controller::DBIC::DoesPaging=>q[0], Catalyst::View::TT=>q[0], CatalystX-Eta=>q[0], CatalystX::Eta::Controller::REST=>q[0], Config::General=>q[0], Crypt::PasswdMD5=>q[0], DBD::Pg=>q[0], DBIx::Class::PassphraseColumn=>q[0], DBIx::Class::Schema::Loader=>q[0], DBIx::Class::TimeStamp=>q[0], Data::Diver=>q[0], Data::Manager=>q[0], Data::Printer=>q[0], Data::Section::Simple=>q[0], DateTime::Duration=>q[0], DateTime::Format::Duration=>q[0], DateTime::Format::Excel=>q[0], DateTime::Format::Pg=>q[0], DateTimeX::Easy=>q[0], Digest::MD5=>q[0], Email::MIME=>q[0], Email::Sender=>q[0], Email::Sender::Simple=>q[0], Email::Sender::Transport::SMTP::TLS=>q[0], ExtUtils::MakeMaker=>q[6.36], FindBin=>q[0], FindBin::libs=>q[0], Furl=>q[0], Geo::Coder::Google=>q[0], I18N::AcceptLanguage=>q[0], JSON=>q[0], JSON::Any=>q[0], JSON::XS=>q[0], List::MoreUtils=>q[0], Log::Log4perl=>q[0], MIME::Lite=>q[0], Math::Expression::Evaluator=>q[0], Math::Round=>q[0], Moose=>q[0], MooseX::NonMoose=>q[0], MooseX::Traits=>q[0], MooseX::Types::Email=>q[0], MooseX::Types::JSON=>q[0], Spreadsheet::ParseExcel::Stream=>q[0], Spreadsheet::WriteExcel=>q[0], Spreadsheet::XLSX=>q[0], Statistics::Descriptive=>q[0], String::Random=>q[0], Template=>q[0], Template::Tiny=>q[0], Test::Deep=>q[0], Test::More=>q[0.88], Text2URI=>q[0], Text::CSV=>q[0], Text::CSV_XS=>q[0], Text::Iconv=>q[0], XML::Simple=>q[0], namespace::autoclean=>q[0] }
 #     TEST_REQUIRES => {  }
 #     VERSION => q[0.01]
 #     VERSION_FROM => q[lib/SMM.pm]
@@ -32,7 +32,7 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/5.20.3/x86_64-linux/Config.pm).
+# These definitions are from config.sh (via /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/x86_64-linux/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = cc
@@ -43,16 +43,16 @@ DLSRC = dl_dlopen.xs
 EXE_EXT = 
 FULL_AR = /usr/bin/ar
 LD = cc
-LDDLFLAGS = -shared -O2 -L/usr/local/lib -fstack-protector
-LDFLAGS =  -fstack-protector -L/usr/local/lib
-LIBC = libc-2.19.so
+LDDLFLAGS = -shared -O2 -L/usr/local/lib -fstack-protector-strong
+LDFLAGS =  -fstack-protector-strong -L/usr/local/lib
+LIBC = libc-2.23.so
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = linux
-OSVERS = 3.19.0-25-generic
+OSVERS = 4.4.0-31-generic
 RANLIB = :
-SITELIBEXP = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/site_perl/5.20.3
-SITEARCHEXP = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/site_perl/5.20.3/x86_64-linux
+SITELIBEXP = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/site_perl/5.24.0
+SITEARCHEXP = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/site_perl/5.24.0/x86_64-linux
 SO = so
 VENDORARCHEXP = 
 VENDORLIBEXP = 
@@ -82,55 +82,57 @@ MAN3EXT = 3
 INSTALLDIRS = site
 DESTDIR = 
 PREFIX = $(SITEPREFIX)
-PERLPREFIX = /home/renato/perl5/perlbrew/perls/perl-5.20.3
-SITEPREFIX = /home/renato/perl5/perlbrew/perls/perl-5.20.3
+PERLPREFIX = /home/junior/perl5/perlbrew/perls/perl-5.24.0
+SITEPREFIX = /home/junior/perl5/perlbrew/perls/perl-5.24.0
 VENDORPREFIX = 
-INSTALLPRIVLIB = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/5.20.3
+INSTALLPRIVLIB = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/site_perl/5.20.3
+INSTALLSITELIB = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/site_perl/5.24.0
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
 INSTALLVENDORLIB = 
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/5.20.3/x86_64-linux
+INSTALLARCHLIB = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/x86_64-linux
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/site_perl/5.20.3/x86_64-linux
+INSTALLSITEARCH = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/site_perl/5.24.0/x86_64-linux
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
 INSTALLVENDORARCH = 
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
-INSTALLBIN = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin
+INSTALLBIN = /home/junior/perl5/perlbrew/perls/perl-5.24.0/bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
-INSTALLSITEBIN = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin
+INSTALLSITEBIN = /home/junior/perl5/perlbrew/perls/perl-5.24.0/bin
 DESTINSTALLSITEBIN = $(DESTDIR)$(INSTALLSITEBIN)
 INSTALLVENDORBIN = 
 DESTINSTALLVENDORBIN = $(DESTDIR)$(INSTALLVENDORBIN)
-INSTALLSCRIPT = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin
+INSTALLSCRIPT = /home/junior/perl5/perlbrew/perls/perl-5.24.0/bin
 DESTINSTALLSCRIPT = $(DESTDIR)$(INSTALLSCRIPT)
-INSTALLSITESCRIPT = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin
+INSTALLSITESCRIPT = /home/junior/perl5/perlbrew/perls/perl-5.24.0/bin
 DESTINSTALLSITESCRIPT = $(DESTDIR)$(INSTALLSITESCRIPT)
 INSTALLVENDORSCRIPT = 
 DESTINSTALLVENDORSCRIPT = $(DESTDIR)$(INSTALLVENDORSCRIPT)
-INSTALLMAN1DIR = /home/renato/perl5/perlbrew/perls/perl-5.20.3/man/man1
+INSTALLMAN1DIR = /home/junior/perl5/perlbrew/perls/perl-5.24.0/man/man1
 DESTINSTALLMAN1DIR = $(DESTDIR)$(INSTALLMAN1DIR)
-INSTALLSITEMAN1DIR = /home/renato/perl5/perlbrew/perls/perl-5.20.3/man/man1
+INSTALLSITEMAN1DIR = /home/junior/perl5/perlbrew/perls/perl-5.24.0/man/man1
 DESTINSTALLSITEMAN1DIR = $(DESTDIR)$(INSTALLSITEMAN1DIR)
 INSTALLVENDORMAN1DIR = 
 DESTINSTALLVENDORMAN1DIR = $(DESTDIR)$(INSTALLVENDORMAN1DIR)
-INSTALLMAN3DIR = /home/renato/perl5/perlbrew/perls/perl-5.20.3/man/man3
+INSTALLMAN3DIR = /home/junior/perl5/perlbrew/perls/perl-5.24.0/man/man3
 DESTINSTALLMAN3DIR = $(DESTDIR)$(INSTALLMAN3DIR)
-INSTALLSITEMAN3DIR = /home/renato/perl5/perlbrew/perls/perl-5.20.3/man/man3
+INSTALLSITEMAN3DIR = /home/junior/perl5/perlbrew/perls/perl-5.24.0/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = 
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
 PERL_LIB =
-PERL_ARCHLIB = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/5.20.3/x86_64-linux
+PERL_ARCHLIB = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/x86_64-linux
+PERL_ARCHLIBDEP = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/x86_64-linux
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/5.20.3/x86_64-linux/CORE
-PERL = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin/perl "-Iinc"
-FULLPERL = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin/perl "-Iinc"
+PERL_INC = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/x86_64-linux/CORE
+PERL_INCDEP = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/x86_64-linux/CORE
+PERL = "/home/junior/perl5/perlbrew/perls/perl-5.24.0/bin/perl" "-Iinc"
+FULLPERL = "/home/junior/perl5/perlbrew/perls/perl-5.24.0/bin/perl" "-Iinc"
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -143,9 +145,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /home/renato/perl5/perlbrew/perls/perl-5.20.3/lib/5.20.3/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.98
-MM_REVISION = 69800
+MAKEMAKER   = /home/junior/perl5/perlbrew/perls/perl-5.24.0/lib/5.24.0/ExtUtils/MakeMaker.pm
+MM_VERSION  = 7.1001
+MM_REVISION = 71001
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -240,7 +242,7 @@ MAN3PODS = lib/SMM.pm \
 	lib/SMM/Schema/Result/UserSession.pm
 
 # Where is the Config information that we are using/depend on
-CONFIGDEP = $(PERL_ARCHLIB)$(DFSEP)Config.pm $(PERL_INC)$(DFSEP)config.h
+CONFIGDEP = $(PERL_ARCHLIBDEP)$(DFSEP)Config.pm $(PERL_INCDEP)$(DFSEP)config.h
 
 # Where to build things
 INST_LIBDIR      = $(INST_LIB)
@@ -256,6 +258,7 @@ INST_BOOT        =
 # Extra linker info
 EXPORT_LIST        = 
 PERL_ARCHIVE       = 
+PERL_ARCHIVEDEP    = 
 PERL_ARCHIVE_AFTER = 
 
 
@@ -809,7 +812,7 @@ PM_TO_BLIB = lib/SMM.pm \
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 6.98
+MM_Unix_VERSION = 7.1001
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -1099,13 +1102,13 @@ manifypods : pure_all  \
 	script/smm_fastcgi.pl \
 	script/smm_server.pl \
 	script/smm_test.pl
-	$(NOECHO) $(POD2MAN) --section=1 --perm_rw=$(PERM_RW) \
+	$(NOECHO) $(POD2MAN) --section=1 --perm_rw=$(PERM_RW) -u \
 	  script/smm_cgi.pl $(INST_MAN1DIR)/smm_cgi.pl.$(MAN1EXT) \
 	  script/smm_create.pl $(INST_MAN1DIR)/smm_create.pl.$(MAN1EXT) \
 	  script/smm_fastcgi.pl $(INST_MAN1DIR)/smm_fastcgi.pl.$(MAN1EXT) \
 	  script/smm_server.pl $(INST_MAN1DIR)/smm_server.pl.$(MAN1EXT) \
 	  script/smm_test.pl $(INST_MAN1DIR)/smm_test.pl.$(MAN1EXT) 
-	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) \
+	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) -u \
 	  lib/SMM.pm $(INST_MAN3DIR)/SMM.$(MAN3EXT) \
 	  lib/SMM/Controller/API/Contact.pm $(INST_MAN3DIR)/SMM::Controller::API::Contact.$(MAN3EXT) \
 	  lib/SMM/Controller/API/PreRegister.pm $(INST_MAN3DIR)/SMM::Controller::API::PreRegister.$(MAN3EXT) \
@@ -1134,9 +1137,9 @@ manifypods : pure_all  \
 	  lib/SMM/Schema/Result/GoalOrganization.pm $(INST_MAN3DIR)/SMM::Schema::Result::GoalOrganization.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/GoalPorcentage.pm $(INST_MAN3DIR)/SMM::Schema::Result::GoalPorcentage.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/GoalProject.pm $(INST_MAN3DIR)/SMM::Schema::Result::GoalProject.$(MAN3EXT) \
-	  lib/SMM/Schema/Result/GoalSecretary.pm $(INST_MAN3DIR)/SMM::Schema::Result::GoalSecretary.$(MAN3EXT) \
-	  lib/SMM/Schema/Result/ImagesProject.pm $(INST_MAN3DIR)/SMM::Schema::Result::ImagesProject.$(MAN3EXT) 
-	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) \
+	  lib/SMM/Schema/Result/GoalSecretary.pm $(INST_MAN3DIR)/SMM::Schema::Result::GoalSecretary.$(MAN3EXT) 
+	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) -u \
+	  lib/SMM/Schema/Result/ImagesProject.pm $(INST_MAN3DIR)/SMM::Schema::Result::ImagesProject.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/InviteCounsil.pm $(INST_MAN3DIR)/SMM::Schema::Result::InviteCounsil.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/Management.pm $(INST_MAN3DIR)/SMM::Schema::Result::Management.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/Milestone.pm $(INST_MAN3DIR)/SMM::Schema::Result::Milestone.$(MAN3EXT) \
@@ -1161,10 +1164,10 @@ manifypods : pure_all  \
 	  lib/SMM/Schema/Result/RasterOverview.pm $(INST_MAN3DIR)/SMM::Schema::Result::RasterOverview.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/Region.pm $(INST_MAN3DIR)/SMM::Schema::Result::Region.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/RegisterCounsilManual.pm $(INST_MAN3DIR)/SMM::Schema::Result::RegisterCounsilManual.$(MAN3EXT) \
-	  lib/SMM/Schema/Result/Role.pm $(INST_MAN3DIR)/SMM::Schema::Result::Role.$(MAN3EXT) \
+	  lib/SMM/Schema/Result/Role.pm $(INST_MAN3DIR)/SMM::Schema::Result::Role.$(MAN3EXT) 
+	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) -u \
 	  lib/SMM/Schema/Result/Secretary.pm $(INST_MAN3DIR)/SMM::Schema::Result::Secretary.$(MAN3EXT) \
-	  lib/SMM/Schema/Result/SpatialRefSy.pm $(INST_MAN3DIR)/SMM::Schema::Result::SpatialRefSy.$(MAN3EXT) 
-	$(NOECHO) $(POD2MAN) --section=3 --perm_rw=$(PERM_RW) \
+	  lib/SMM/Schema/Result/SpatialRefSy.pm $(INST_MAN3DIR)/SMM::Schema::Result::SpatialRefSy.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/State.pm $(INST_MAN3DIR)/SMM::Schema::Result::State.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/Status.pm $(INST_MAN3DIR)/SMM::Schema::Result::Status.$(MAN3EXT) \
 	  lib/SMM/Schema/Result/Subprefecture.pm $(INST_MAN3DIR)/SMM::Schema::Result::Subprefecture.$(MAN3EXT) \
@@ -1185,50 +1188,32 @@ manifypods : pure_all  \
 
 EXE_FILES = script/acentos-regioes.pl script/add_column_budget.pl script/adjust_name_district.pl script/change_first_character.pl script/complement_subpref_v2.pl script/crawler.pl script/crawler_hernan.pl script/create_goal-id_project.pl script/deploy.pl script/disqus_import.pl script/export_indicators.pl script/get_contract.pl script/import_user_org.pl script/importa_csv_budget.pl script/latlongfromgcode.pl script/milestone_type.pl script/populate_budget_xls.pl script/populate_company.pl script/populate_types_project.pl script/populateconselho.pl script/populateproject.pl script/populatesubpref.pl script/populatesubpref_dist.pl script/progress_project.pl script/progress_project_csv.pl script/project_milestone.pl script/project_number.pl script/project_types.pl script/projects_milestones.pl script/projects_types.pl script/regionpopulate.pl script/search_cep.pl script/smm_cgi.pl script/smm_create.pl script/smm_fastcgi.pl script/smm_server.pl script/smm_test.pl script/update-data-ps.pl script/update_company_cnpj.pl script/update_goalid_project_id.pl script/upload_goal-id_project.pl
 
-pure_all :: $(INST_SCRIPT)/acentos-regioes.pl $(INST_SCRIPT)/progress_project_csv.pl $(INST_SCRIPT)/change_first_character.pl $(INST_SCRIPT)/smm_test.pl $(INST_SCRIPT)/disqus_import.pl $(INST_SCRIPT)/progress_project.pl $(INST_SCRIPT)/create_goal-id_project.pl $(INST_SCRIPT)/get_contract.pl $(INST_SCRIPT)/project_types.pl $(INST_SCRIPT)/smm_fastcgi.pl $(INST_SCRIPT)/projects_types.pl $(INST_SCRIPT)/update_goalid_project_id.pl $(INST_SCRIPT)/smm_create.pl $(INST_SCRIPT)/import_user_org.pl $(INST_SCRIPT)/populate_budget_xls.pl $(INST_SCRIPT)/populatesubpref.pl $(INST_SCRIPT)/projects_milestones.pl $(INST_SCRIPT)/crawler_hernan.pl $(INST_SCRIPT)/populate_company.pl $(INST_SCRIPT)/populateproject.pl $(INST_SCRIPT)/export_indicators.pl $(INST_SCRIPT)/latlongfromgcode.pl $(INST_SCRIPT)/project_number.pl $(INST_SCRIPT)/crawler.pl $(INST_SCRIPT)/upload_goal-id_project.pl $(INST_SCRIPT)/smm_cgi.pl $(INST_SCRIPT)/project_milestone.pl $(INST_SCRIPT)/regionpopulate.pl $(INST_SCRIPT)/search_cep.pl $(INST_SCRIPT)/adjust_name_district.pl $(INST_SCRIPT)/importa_csv_budget.pl $(INST_SCRIPT)/populateconselho.pl $(INST_SCRIPT)/complement_subpref_v2.pl $(INST_SCRIPT)/update-data-ps.pl $(INST_SCRIPT)/populatesubpref_dist.pl $(INST_SCRIPT)/milestone_type.pl $(INST_SCRIPT)/smm_server.pl $(INST_SCRIPT)/update_company_cnpj.pl $(INST_SCRIPT)/populate_types_project.pl $(INST_SCRIPT)/add_column_budget.pl $(INST_SCRIPT)/deploy.pl
+pure_all :: $(INST_SCRIPT)/smm_test.pl $(INST_SCRIPT)/disqus_import.pl $(INST_SCRIPT)/populateconselho.pl $(INST_SCRIPT)/populate_company.pl $(INST_SCRIPT)/smm_server.pl $(INST_SCRIPT)/change_first_character.pl $(INST_SCRIPT)/update_goalid_project_id.pl $(INST_SCRIPT)/import_user_org.pl $(INST_SCRIPT)/projects_types.pl $(INST_SCRIPT)/importa_csv_budget.pl $(INST_SCRIPT)/populatesubpref.pl $(INST_SCRIPT)/progress_project.pl $(INST_SCRIPT)/crawler_hernan.pl $(INST_SCRIPT)/crawler.pl $(INST_SCRIPT)/search_cep.pl $(INST_SCRIPT)/milestone_type.pl $(INST_SCRIPT)/project_types.pl $(INST_SCRIPT)/update-data-ps.pl $(INST_SCRIPT)/regionpopulate.pl $(INST_SCRIPT)/project_milestone.pl $(INST_SCRIPT)/smm_fastcgi.pl $(INST_SCRIPT)/deploy.pl $(INST_SCRIPT)/smm_create.pl $(INST_SCRIPT)/export_indicators.pl $(INST_SCRIPT)/get_contract.pl $(INST_SCRIPT)/populatesubpref_dist.pl $(INST_SCRIPT)/populate_budget_xls.pl $(INST_SCRIPT)/update_company_cnpj.pl $(INST_SCRIPT)/complement_subpref_v2.pl $(INST_SCRIPT)/progress_project_csv.pl $(INST_SCRIPT)/latlongfromgcode.pl $(INST_SCRIPT)/projects_milestones.pl $(INST_SCRIPT)/upload_goal-id_project.pl $(INST_SCRIPT)/add_column_budget.pl $(INST_SCRIPT)/project_number.pl $(INST_SCRIPT)/populate_types_project.pl $(INST_SCRIPT)/smm_cgi.pl $(INST_SCRIPT)/populateproject.pl $(INST_SCRIPT)/acentos-regioes.pl $(INST_SCRIPT)/adjust_name_district.pl $(INST_SCRIPT)/create_goal-id_project.pl
 	$(NOECHO) $(NOOP)
 
 realclean ::
 	$(RM_F) \
-	  $(INST_SCRIPT)/acentos-regioes.pl $(INST_SCRIPT)/progress_project_csv.pl \
-	  $(INST_SCRIPT)/change_first_character.pl $(INST_SCRIPT)/smm_test.pl \
-	  $(INST_SCRIPT)/disqus_import.pl $(INST_SCRIPT)/progress_project.pl \
-	  $(INST_SCRIPT)/create_goal-id_project.pl $(INST_SCRIPT)/get_contract.pl \
-	  $(INST_SCRIPT)/project_types.pl $(INST_SCRIPT)/smm_fastcgi.pl \
-	  $(INST_SCRIPT)/projects_types.pl $(INST_SCRIPT)/update_goalid_project_id.pl \
-	  $(INST_SCRIPT)/smm_create.pl $(INST_SCRIPT)/import_user_org.pl \
-	  $(INST_SCRIPT)/populate_budget_xls.pl $(INST_SCRIPT)/populatesubpref.pl \
-	  $(INST_SCRIPT)/projects_milestones.pl $(INST_SCRIPT)/crawler_hernan.pl \
-	  $(INST_SCRIPT)/populate_company.pl $(INST_SCRIPT)/populateproject.pl \
-	  $(INST_SCRIPT)/export_indicators.pl $(INST_SCRIPT)/latlongfromgcode.pl \
-	  $(INST_SCRIPT)/project_number.pl $(INST_SCRIPT)/crawler.pl \
-	  $(INST_SCRIPT)/upload_goal-id_project.pl $(INST_SCRIPT)/smm_cgi.pl \
-	  $(INST_SCRIPT)/project_milestone.pl $(INST_SCRIPT)/regionpopulate.pl \
-	  $(INST_SCRIPT)/search_cep.pl $(INST_SCRIPT)/adjust_name_district.pl \
-	  $(INST_SCRIPT)/importa_csv_budget.pl $(INST_SCRIPT)/populateconselho.pl \
-	  $(INST_SCRIPT)/complement_subpref_v2.pl $(INST_SCRIPT)/update-data-ps.pl \
-	  $(INST_SCRIPT)/populatesubpref_dist.pl $(INST_SCRIPT)/milestone_type.pl \
-	  $(INST_SCRIPT)/smm_server.pl $(INST_SCRIPT)/update_company_cnpj.pl \
-	  $(INST_SCRIPT)/populate_types_project.pl $(INST_SCRIPT)/add_column_budget.pl \
-	  $(INST_SCRIPT)/deploy.pl 
-
-$(INST_SCRIPT)/acentos-regioes.pl : script/acentos-regioes.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/acentos-regioes.pl
-	$(CP) script/acentos-regioes.pl $(INST_SCRIPT)/acentos-regioes.pl
-	$(FIXIN) $(INST_SCRIPT)/acentos-regioes.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/acentos-regioes.pl
-
-$(INST_SCRIPT)/progress_project_csv.pl : script/progress_project_csv.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/progress_project_csv.pl
-	$(CP) script/progress_project_csv.pl $(INST_SCRIPT)/progress_project_csv.pl
-	$(FIXIN) $(INST_SCRIPT)/progress_project_csv.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/progress_project_csv.pl
-
-$(INST_SCRIPT)/change_first_character.pl : script/change_first_character.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/change_first_character.pl
-	$(CP) script/change_first_character.pl $(INST_SCRIPT)/change_first_character.pl
-	$(FIXIN) $(INST_SCRIPT)/change_first_character.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/change_first_character.pl
+	  $(INST_SCRIPT)/smm_test.pl $(INST_SCRIPT)/disqus_import.pl \
+	  $(INST_SCRIPT)/populateconselho.pl $(INST_SCRIPT)/populate_company.pl \
+	  $(INST_SCRIPT)/smm_server.pl $(INST_SCRIPT)/change_first_character.pl \
+	  $(INST_SCRIPT)/update_goalid_project_id.pl $(INST_SCRIPT)/import_user_org.pl \
+	  $(INST_SCRIPT)/projects_types.pl $(INST_SCRIPT)/importa_csv_budget.pl \
+	  $(INST_SCRIPT)/populatesubpref.pl $(INST_SCRIPT)/progress_project.pl \
+	  $(INST_SCRIPT)/crawler_hernan.pl $(INST_SCRIPT)/crawler.pl \
+	  $(INST_SCRIPT)/search_cep.pl $(INST_SCRIPT)/milestone_type.pl \
+	  $(INST_SCRIPT)/project_types.pl $(INST_SCRIPT)/update-data-ps.pl \
+	  $(INST_SCRIPT)/regionpopulate.pl $(INST_SCRIPT)/project_milestone.pl \
+	  $(INST_SCRIPT)/smm_fastcgi.pl $(INST_SCRIPT)/deploy.pl \
+	  $(INST_SCRIPT)/smm_create.pl $(INST_SCRIPT)/export_indicators.pl \
+	  $(INST_SCRIPT)/get_contract.pl $(INST_SCRIPT)/populatesubpref_dist.pl \
+	  $(INST_SCRIPT)/populate_budget_xls.pl $(INST_SCRIPT)/update_company_cnpj.pl \
+	  $(INST_SCRIPT)/complement_subpref_v2.pl $(INST_SCRIPT)/progress_project_csv.pl \
+	  $(INST_SCRIPT)/latlongfromgcode.pl $(INST_SCRIPT)/projects_milestones.pl \
+	  $(INST_SCRIPT)/upload_goal-id_project.pl $(INST_SCRIPT)/add_column_budget.pl \
+	  $(INST_SCRIPT)/project_number.pl $(INST_SCRIPT)/populate_types_project.pl \
+	  $(INST_SCRIPT)/smm_cgi.pl $(INST_SCRIPT)/populateproject.pl \
+	  $(INST_SCRIPT)/acentos-regioes.pl $(INST_SCRIPT)/adjust_name_district.pl \
+	  $(INST_SCRIPT)/create_goal-id_project.pl 
 
 $(INST_SCRIPT)/smm_test.pl : script/smm_test.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
 	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_test.pl
@@ -1242,83 +1227,11 @@ $(INST_SCRIPT)/disqus_import.pl : script/disqus_import.pl $(FIRST_MAKEFILE) $(IN
 	$(FIXIN) $(INST_SCRIPT)/disqus_import.pl
 	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/disqus_import.pl
 
-$(INST_SCRIPT)/progress_project.pl : script/progress_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/progress_project.pl
-	$(CP) script/progress_project.pl $(INST_SCRIPT)/progress_project.pl
-	$(FIXIN) $(INST_SCRIPT)/progress_project.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/progress_project.pl
-
-$(INST_SCRIPT)/create_goal-id_project.pl : script/create_goal-id_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/create_goal-id_project.pl
-	$(CP) script/create_goal-id_project.pl $(INST_SCRIPT)/create_goal-id_project.pl
-	$(FIXIN) $(INST_SCRIPT)/create_goal-id_project.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/create_goal-id_project.pl
-
-$(INST_SCRIPT)/get_contract.pl : script/get_contract.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/get_contract.pl
-	$(CP) script/get_contract.pl $(INST_SCRIPT)/get_contract.pl
-	$(FIXIN) $(INST_SCRIPT)/get_contract.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/get_contract.pl
-
-$(INST_SCRIPT)/project_types.pl : script/project_types.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/project_types.pl
-	$(CP) script/project_types.pl $(INST_SCRIPT)/project_types.pl
-	$(FIXIN) $(INST_SCRIPT)/project_types.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/project_types.pl
-
-$(INST_SCRIPT)/smm_fastcgi.pl : script/smm_fastcgi.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_fastcgi.pl
-	$(CP) script/smm_fastcgi.pl $(INST_SCRIPT)/smm_fastcgi.pl
-	$(FIXIN) $(INST_SCRIPT)/smm_fastcgi.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_fastcgi.pl
-
-$(INST_SCRIPT)/projects_types.pl : script/projects_types.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/projects_types.pl
-	$(CP) script/projects_types.pl $(INST_SCRIPT)/projects_types.pl
-	$(FIXIN) $(INST_SCRIPT)/projects_types.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/projects_types.pl
-
-$(INST_SCRIPT)/update_goalid_project_id.pl : script/update_goalid_project_id.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/update_goalid_project_id.pl
-	$(CP) script/update_goalid_project_id.pl $(INST_SCRIPT)/update_goalid_project_id.pl
-	$(FIXIN) $(INST_SCRIPT)/update_goalid_project_id.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/update_goalid_project_id.pl
-
-$(INST_SCRIPT)/smm_create.pl : script/smm_create.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_create.pl
-	$(CP) script/smm_create.pl $(INST_SCRIPT)/smm_create.pl
-	$(FIXIN) $(INST_SCRIPT)/smm_create.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_create.pl
-
-$(INST_SCRIPT)/import_user_org.pl : script/import_user_org.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/import_user_org.pl
-	$(CP) script/import_user_org.pl $(INST_SCRIPT)/import_user_org.pl
-	$(FIXIN) $(INST_SCRIPT)/import_user_org.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/import_user_org.pl
-
-$(INST_SCRIPT)/populate_budget_xls.pl : script/populate_budget_xls.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populate_budget_xls.pl
-	$(CP) script/populate_budget_xls.pl $(INST_SCRIPT)/populate_budget_xls.pl
-	$(FIXIN) $(INST_SCRIPT)/populate_budget_xls.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populate_budget_xls.pl
-
-$(INST_SCRIPT)/populatesubpref.pl : script/populatesubpref.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populatesubpref.pl
-	$(CP) script/populatesubpref.pl $(INST_SCRIPT)/populatesubpref.pl
-	$(FIXIN) $(INST_SCRIPT)/populatesubpref.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populatesubpref.pl
-
-$(INST_SCRIPT)/projects_milestones.pl : script/projects_milestones.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/projects_milestones.pl
-	$(CP) script/projects_milestones.pl $(INST_SCRIPT)/projects_milestones.pl
-	$(FIXIN) $(INST_SCRIPT)/projects_milestones.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/projects_milestones.pl
-
-$(INST_SCRIPT)/crawler_hernan.pl : script/crawler_hernan.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/crawler_hernan.pl
-	$(CP) script/crawler_hernan.pl $(INST_SCRIPT)/crawler_hernan.pl
-	$(FIXIN) $(INST_SCRIPT)/crawler_hernan.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/crawler_hernan.pl
+$(INST_SCRIPT)/populateconselho.pl : script/populateconselho.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populateconselho.pl
+	$(CP) script/populateconselho.pl $(INST_SCRIPT)/populateconselho.pl
+	$(FIXIN) $(INST_SCRIPT)/populateconselho.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populateconselho.pl
 
 $(INST_SCRIPT)/populate_company.pl : script/populate_company.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
 	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populate_company.pl
@@ -1326,71 +1239,35 @@ $(INST_SCRIPT)/populate_company.pl : script/populate_company.pl $(FIRST_MAKEFILE
 	$(FIXIN) $(INST_SCRIPT)/populate_company.pl
 	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populate_company.pl
 
-$(INST_SCRIPT)/populateproject.pl : script/populateproject.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populateproject.pl
-	$(CP) script/populateproject.pl $(INST_SCRIPT)/populateproject.pl
-	$(FIXIN) $(INST_SCRIPT)/populateproject.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populateproject.pl
+$(INST_SCRIPT)/smm_server.pl : script/smm_server.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_server.pl
+	$(CP) script/smm_server.pl $(INST_SCRIPT)/smm_server.pl
+	$(FIXIN) $(INST_SCRIPT)/smm_server.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_server.pl
 
-$(INST_SCRIPT)/export_indicators.pl : script/export_indicators.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/export_indicators.pl
-	$(CP) script/export_indicators.pl $(INST_SCRIPT)/export_indicators.pl
-	$(FIXIN) $(INST_SCRIPT)/export_indicators.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/export_indicators.pl
+$(INST_SCRIPT)/change_first_character.pl : script/change_first_character.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/change_first_character.pl
+	$(CP) script/change_first_character.pl $(INST_SCRIPT)/change_first_character.pl
+	$(FIXIN) $(INST_SCRIPT)/change_first_character.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/change_first_character.pl
 
-$(INST_SCRIPT)/latlongfromgcode.pl : script/latlongfromgcode.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/latlongfromgcode.pl
-	$(CP) script/latlongfromgcode.pl $(INST_SCRIPT)/latlongfromgcode.pl
-	$(FIXIN) $(INST_SCRIPT)/latlongfromgcode.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/latlongfromgcode.pl
+$(INST_SCRIPT)/update_goalid_project_id.pl : script/update_goalid_project_id.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/update_goalid_project_id.pl
+	$(CP) script/update_goalid_project_id.pl $(INST_SCRIPT)/update_goalid_project_id.pl
+	$(FIXIN) $(INST_SCRIPT)/update_goalid_project_id.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/update_goalid_project_id.pl
 
-$(INST_SCRIPT)/project_number.pl : script/project_number.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/project_number.pl
-	$(CP) script/project_number.pl $(INST_SCRIPT)/project_number.pl
-	$(FIXIN) $(INST_SCRIPT)/project_number.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/project_number.pl
+$(INST_SCRIPT)/import_user_org.pl : script/import_user_org.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/import_user_org.pl
+	$(CP) script/import_user_org.pl $(INST_SCRIPT)/import_user_org.pl
+	$(FIXIN) $(INST_SCRIPT)/import_user_org.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/import_user_org.pl
 
-$(INST_SCRIPT)/crawler.pl : script/crawler.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/crawler.pl
-	$(CP) script/crawler.pl $(INST_SCRIPT)/crawler.pl
-	$(FIXIN) $(INST_SCRIPT)/crawler.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/crawler.pl
-
-$(INST_SCRIPT)/upload_goal-id_project.pl : script/upload_goal-id_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/upload_goal-id_project.pl
-	$(CP) script/upload_goal-id_project.pl $(INST_SCRIPT)/upload_goal-id_project.pl
-	$(FIXIN) $(INST_SCRIPT)/upload_goal-id_project.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/upload_goal-id_project.pl
-
-$(INST_SCRIPT)/smm_cgi.pl : script/smm_cgi.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_cgi.pl
-	$(CP) script/smm_cgi.pl $(INST_SCRIPT)/smm_cgi.pl
-	$(FIXIN) $(INST_SCRIPT)/smm_cgi.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_cgi.pl
-
-$(INST_SCRIPT)/project_milestone.pl : script/project_milestone.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/project_milestone.pl
-	$(CP) script/project_milestone.pl $(INST_SCRIPT)/project_milestone.pl
-	$(FIXIN) $(INST_SCRIPT)/project_milestone.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/project_milestone.pl
-
-$(INST_SCRIPT)/regionpopulate.pl : script/regionpopulate.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/regionpopulate.pl
-	$(CP) script/regionpopulate.pl $(INST_SCRIPT)/regionpopulate.pl
-	$(FIXIN) $(INST_SCRIPT)/regionpopulate.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/regionpopulate.pl
-
-$(INST_SCRIPT)/search_cep.pl : script/search_cep.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/search_cep.pl
-	$(CP) script/search_cep.pl $(INST_SCRIPT)/search_cep.pl
-	$(FIXIN) $(INST_SCRIPT)/search_cep.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/search_cep.pl
-
-$(INST_SCRIPT)/adjust_name_district.pl : script/adjust_name_district.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/adjust_name_district.pl
-	$(CP) script/adjust_name_district.pl $(INST_SCRIPT)/adjust_name_district.pl
-	$(FIXIN) $(INST_SCRIPT)/adjust_name_district.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/adjust_name_district.pl
+$(INST_SCRIPT)/projects_types.pl : script/projects_types.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/projects_types.pl
+	$(CP) script/projects_types.pl $(INST_SCRIPT)/projects_types.pl
+	$(FIXIN) $(INST_SCRIPT)/projects_types.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/projects_types.pl
 
 $(INST_SCRIPT)/importa_csv_budget.pl : script/importa_csv_budget.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
 	$(NOECHO) $(RM_F) $(INST_SCRIPT)/importa_csv_budget.pl
@@ -1398,29 +1275,35 @@ $(INST_SCRIPT)/importa_csv_budget.pl : script/importa_csv_budget.pl $(FIRST_MAKE
 	$(FIXIN) $(INST_SCRIPT)/importa_csv_budget.pl
 	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/importa_csv_budget.pl
 
-$(INST_SCRIPT)/populateconselho.pl : script/populateconselho.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populateconselho.pl
-	$(CP) script/populateconselho.pl $(INST_SCRIPT)/populateconselho.pl
-	$(FIXIN) $(INST_SCRIPT)/populateconselho.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populateconselho.pl
+$(INST_SCRIPT)/populatesubpref.pl : script/populatesubpref.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populatesubpref.pl
+	$(CP) script/populatesubpref.pl $(INST_SCRIPT)/populatesubpref.pl
+	$(FIXIN) $(INST_SCRIPT)/populatesubpref.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populatesubpref.pl
 
-$(INST_SCRIPT)/complement_subpref_v2.pl : script/complement_subpref_v2.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/complement_subpref_v2.pl
-	$(CP) script/complement_subpref_v2.pl $(INST_SCRIPT)/complement_subpref_v2.pl
-	$(FIXIN) $(INST_SCRIPT)/complement_subpref_v2.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/complement_subpref_v2.pl
+$(INST_SCRIPT)/progress_project.pl : script/progress_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/progress_project.pl
+	$(CP) script/progress_project.pl $(INST_SCRIPT)/progress_project.pl
+	$(FIXIN) $(INST_SCRIPT)/progress_project.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/progress_project.pl
 
-$(INST_SCRIPT)/update-data-ps.pl : script/update-data-ps.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/update-data-ps.pl
-	$(CP) script/update-data-ps.pl $(INST_SCRIPT)/update-data-ps.pl
-	$(FIXIN) $(INST_SCRIPT)/update-data-ps.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/update-data-ps.pl
+$(INST_SCRIPT)/crawler_hernan.pl : script/crawler_hernan.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/crawler_hernan.pl
+	$(CP) script/crawler_hernan.pl $(INST_SCRIPT)/crawler_hernan.pl
+	$(FIXIN) $(INST_SCRIPT)/crawler_hernan.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/crawler_hernan.pl
 
-$(INST_SCRIPT)/populatesubpref_dist.pl : script/populatesubpref_dist.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populatesubpref_dist.pl
-	$(CP) script/populatesubpref_dist.pl $(INST_SCRIPT)/populatesubpref_dist.pl
-	$(FIXIN) $(INST_SCRIPT)/populatesubpref_dist.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populatesubpref_dist.pl
+$(INST_SCRIPT)/crawler.pl : script/crawler.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/crawler.pl
+	$(CP) script/crawler.pl $(INST_SCRIPT)/crawler.pl
+	$(FIXIN) $(INST_SCRIPT)/crawler.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/crawler.pl
+
+$(INST_SCRIPT)/search_cep.pl : script/search_cep.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/search_cep.pl
+	$(CP) script/search_cep.pl $(INST_SCRIPT)/search_cep.pl
+	$(FIXIN) $(INST_SCRIPT)/search_cep.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/search_cep.pl
 
 $(INST_SCRIPT)/milestone_type.pl : script/milestone_type.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
 	$(NOECHO) $(RM_F) $(INST_SCRIPT)/milestone_type.pl
@@ -1428,11 +1311,71 @@ $(INST_SCRIPT)/milestone_type.pl : script/milestone_type.pl $(FIRST_MAKEFILE) $(
 	$(FIXIN) $(INST_SCRIPT)/milestone_type.pl
 	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/milestone_type.pl
 
-$(INST_SCRIPT)/smm_server.pl : script/smm_server.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_server.pl
-	$(CP) script/smm_server.pl $(INST_SCRIPT)/smm_server.pl
-	$(FIXIN) $(INST_SCRIPT)/smm_server.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_server.pl
+$(INST_SCRIPT)/project_types.pl : script/project_types.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/project_types.pl
+	$(CP) script/project_types.pl $(INST_SCRIPT)/project_types.pl
+	$(FIXIN) $(INST_SCRIPT)/project_types.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/project_types.pl
+
+$(INST_SCRIPT)/update-data-ps.pl : script/update-data-ps.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/update-data-ps.pl
+	$(CP) script/update-data-ps.pl $(INST_SCRIPT)/update-data-ps.pl
+	$(FIXIN) $(INST_SCRIPT)/update-data-ps.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/update-data-ps.pl
+
+$(INST_SCRIPT)/regionpopulate.pl : script/regionpopulate.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/regionpopulate.pl
+	$(CP) script/regionpopulate.pl $(INST_SCRIPT)/regionpopulate.pl
+	$(FIXIN) $(INST_SCRIPT)/regionpopulate.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/regionpopulate.pl
+
+$(INST_SCRIPT)/project_milestone.pl : script/project_milestone.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/project_milestone.pl
+	$(CP) script/project_milestone.pl $(INST_SCRIPT)/project_milestone.pl
+	$(FIXIN) $(INST_SCRIPT)/project_milestone.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/project_milestone.pl
+
+$(INST_SCRIPT)/smm_fastcgi.pl : script/smm_fastcgi.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_fastcgi.pl
+	$(CP) script/smm_fastcgi.pl $(INST_SCRIPT)/smm_fastcgi.pl
+	$(FIXIN) $(INST_SCRIPT)/smm_fastcgi.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_fastcgi.pl
+
+$(INST_SCRIPT)/deploy.pl : script/deploy.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/deploy.pl
+	$(CP) script/deploy.pl $(INST_SCRIPT)/deploy.pl
+	$(FIXIN) $(INST_SCRIPT)/deploy.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/deploy.pl
+
+$(INST_SCRIPT)/smm_create.pl : script/smm_create.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_create.pl
+	$(CP) script/smm_create.pl $(INST_SCRIPT)/smm_create.pl
+	$(FIXIN) $(INST_SCRIPT)/smm_create.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_create.pl
+
+$(INST_SCRIPT)/export_indicators.pl : script/export_indicators.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/export_indicators.pl
+	$(CP) script/export_indicators.pl $(INST_SCRIPT)/export_indicators.pl
+	$(FIXIN) $(INST_SCRIPT)/export_indicators.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/export_indicators.pl
+
+$(INST_SCRIPT)/get_contract.pl : script/get_contract.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/get_contract.pl
+	$(CP) script/get_contract.pl $(INST_SCRIPT)/get_contract.pl
+	$(FIXIN) $(INST_SCRIPT)/get_contract.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/get_contract.pl
+
+$(INST_SCRIPT)/populatesubpref_dist.pl : script/populatesubpref_dist.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populatesubpref_dist.pl
+	$(CP) script/populatesubpref_dist.pl $(INST_SCRIPT)/populatesubpref_dist.pl
+	$(FIXIN) $(INST_SCRIPT)/populatesubpref_dist.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populatesubpref_dist.pl
+
+$(INST_SCRIPT)/populate_budget_xls.pl : script/populate_budget_xls.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populate_budget_xls.pl
+	$(CP) script/populate_budget_xls.pl $(INST_SCRIPT)/populate_budget_xls.pl
+	$(FIXIN) $(INST_SCRIPT)/populate_budget_xls.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populate_budget_xls.pl
 
 $(INST_SCRIPT)/update_company_cnpj.pl : script/update_company_cnpj.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
 	$(NOECHO) $(RM_F) $(INST_SCRIPT)/update_company_cnpj.pl
@@ -1440,11 +1383,35 @@ $(INST_SCRIPT)/update_company_cnpj.pl : script/update_company_cnpj.pl $(FIRST_MA
 	$(FIXIN) $(INST_SCRIPT)/update_company_cnpj.pl
 	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/update_company_cnpj.pl
 
-$(INST_SCRIPT)/populate_types_project.pl : script/populate_types_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populate_types_project.pl
-	$(CP) script/populate_types_project.pl $(INST_SCRIPT)/populate_types_project.pl
-	$(FIXIN) $(INST_SCRIPT)/populate_types_project.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populate_types_project.pl
+$(INST_SCRIPT)/complement_subpref_v2.pl : script/complement_subpref_v2.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/complement_subpref_v2.pl
+	$(CP) script/complement_subpref_v2.pl $(INST_SCRIPT)/complement_subpref_v2.pl
+	$(FIXIN) $(INST_SCRIPT)/complement_subpref_v2.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/complement_subpref_v2.pl
+
+$(INST_SCRIPT)/progress_project_csv.pl : script/progress_project_csv.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/progress_project_csv.pl
+	$(CP) script/progress_project_csv.pl $(INST_SCRIPT)/progress_project_csv.pl
+	$(FIXIN) $(INST_SCRIPT)/progress_project_csv.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/progress_project_csv.pl
+
+$(INST_SCRIPT)/latlongfromgcode.pl : script/latlongfromgcode.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/latlongfromgcode.pl
+	$(CP) script/latlongfromgcode.pl $(INST_SCRIPT)/latlongfromgcode.pl
+	$(FIXIN) $(INST_SCRIPT)/latlongfromgcode.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/latlongfromgcode.pl
+
+$(INST_SCRIPT)/projects_milestones.pl : script/projects_milestones.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/projects_milestones.pl
+	$(CP) script/projects_milestones.pl $(INST_SCRIPT)/projects_milestones.pl
+	$(FIXIN) $(INST_SCRIPT)/projects_milestones.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/projects_milestones.pl
+
+$(INST_SCRIPT)/upload_goal-id_project.pl : script/upload_goal-id_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/upload_goal-id_project.pl
+	$(CP) script/upload_goal-id_project.pl $(INST_SCRIPT)/upload_goal-id_project.pl
+	$(FIXIN) $(INST_SCRIPT)/upload_goal-id_project.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/upload_goal-id_project.pl
 
 $(INST_SCRIPT)/add_column_budget.pl : script/add_column_budget.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
 	$(NOECHO) $(RM_F) $(INST_SCRIPT)/add_column_budget.pl
@@ -1452,11 +1419,47 @@ $(INST_SCRIPT)/add_column_budget.pl : script/add_column_budget.pl $(FIRST_MAKEFI
 	$(FIXIN) $(INST_SCRIPT)/add_column_budget.pl
 	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/add_column_budget.pl
 
-$(INST_SCRIPT)/deploy.pl : script/deploy.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
-	$(NOECHO) $(RM_F) $(INST_SCRIPT)/deploy.pl
-	$(CP) script/deploy.pl $(INST_SCRIPT)/deploy.pl
-	$(FIXIN) $(INST_SCRIPT)/deploy.pl
-	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/deploy.pl
+$(INST_SCRIPT)/project_number.pl : script/project_number.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/project_number.pl
+	$(CP) script/project_number.pl $(INST_SCRIPT)/project_number.pl
+	$(FIXIN) $(INST_SCRIPT)/project_number.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/project_number.pl
+
+$(INST_SCRIPT)/populate_types_project.pl : script/populate_types_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populate_types_project.pl
+	$(CP) script/populate_types_project.pl $(INST_SCRIPT)/populate_types_project.pl
+	$(FIXIN) $(INST_SCRIPT)/populate_types_project.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populate_types_project.pl
+
+$(INST_SCRIPT)/smm_cgi.pl : script/smm_cgi.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/smm_cgi.pl
+	$(CP) script/smm_cgi.pl $(INST_SCRIPT)/smm_cgi.pl
+	$(FIXIN) $(INST_SCRIPT)/smm_cgi.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/smm_cgi.pl
+
+$(INST_SCRIPT)/populateproject.pl : script/populateproject.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/populateproject.pl
+	$(CP) script/populateproject.pl $(INST_SCRIPT)/populateproject.pl
+	$(FIXIN) $(INST_SCRIPT)/populateproject.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/populateproject.pl
+
+$(INST_SCRIPT)/acentos-regioes.pl : script/acentos-regioes.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/acentos-regioes.pl
+	$(CP) script/acentos-regioes.pl $(INST_SCRIPT)/acentos-regioes.pl
+	$(FIXIN) $(INST_SCRIPT)/acentos-regioes.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/acentos-regioes.pl
+
+$(INST_SCRIPT)/adjust_name_district.pl : script/adjust_name_district.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/adjust_name_district.pl
+	$(CP) script/adjust_name_district.pl $(INST_SCRIPT)/adjust_name_district.pl
+	$(FIXIN) $(INST_SCRIPT)/adjust_name_district.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/adjust_name_district.pl
+
+$(INST_SCRIPT)/create_goal-id_project.pl : script/create_goal-id_project.pl $(FIRST_MAKEFILE) $(INST_SCRIPT)$(DFSEP).exists $(INST_BIN)$(DFSEP).exists
+	$(NOECHO) $(RM_F) $(INST_SCRIPT)/create_goal-id_project.pl
+	$(CP) script/create_goal-id_project.pl $(INST_SCRIPT)/create_goal-id_project.pl
+	$(FIXIN) $(INST_SCRIPT)/create_goal-id_project.pl
+	-$(NOECHO) $(CHMOD) $(PERM_RWX) $(INST_SCRIPT)/create_goal-id_project.pl
 
 
 
@@ -1507,9 +1510,9 @@ realclean_subdirs :
 # Delete temporary files (via clean) and also delete dist files
 realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
-	  $(FIRST_MAKEFILE) $(MAKEFILE_OLD) 
+	  $(MAKEFILE_OLD) $(FIRST_MAKEFILE) 
 	- $(RM_RF) \
-	  MYMETA.yml $(DISTVNAME) 
+	  $(DISTVNAME) MYMETA.yml 
 
 
 # --- MakeMaker metafile section:
@@ -1600,12 +1603,12 @@ disttest : distdir
 
 
 # --- MakeMaker dist_ci section:
-
 ci :
-	$(PERLRUN) "-MExtUtils::Manifest=maniread" \
-	  -e "@all = keys %{ maniread() };" \
-	  -e "print(qq{Executing $(CI) @all\n}); system(qq{$(CI) @all});" \
-	  -e "print(qq{Executing $(RCS_LABEL) ...\n}); system(qq{$(RCS_LABEL) @all});"
+	$(ABSPERLRUN) -MExtUtils::Manifest=maniread -e '@all = sort keys %{ maniread() };' \
+	  -e 'print(qq{Executing $(CI) @all\n});' \
+	  -e 'system(qq{$(CI) @all}) == 0 or die $$!;' \
+	  -e 'print(qq{Executing $(RCS_LABEL) ...\n});' \
+	  -e 'system(qq{$(RCS_LABEL) @all}) == 0 or die $$!;' --
 
 
 # --- MakeMaker distmeta section:
@@ -1620,7 +1623,7 @@ distmeta : create_distdir metafile
 
 
 # --- MakeMaker distsignature section:
-distsignature : create_distdir
+distsignature : distmeta
 	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) }' \
 	  -e '    or print "Could not add SIGNATURE to MANIFEST: $$$${'\''@'\''}\n"' --
 	$(NOECHO) cd $(DISTVNAME) && $(TOUCH) SIGNATURE
@@ -1656,88 +1659,88 @@ doc__install : doc_site_install
 
 pure_perl_install :: all
 	$(NOECHO) $(MOD_INSTALL) \
-		read $(PERL_ARCHLIB)/auto/$(FULLEXT)/.packlist \
-		write $(DESTINSTALLARCHLIB)/auto/$(FULLEXT)/.packlist \
-		$(INST_LIB) $(DESTINSTALLPRIVLIB) \
-		$(INST_ARCHLIB) $(DESTINSTALLARCHLIB) \
-		$(INST_BIN) $(DESTINSTALLBIN) \
-		$(INST_SCRIPT) $(DESTINSTALLSCRIPT) \
-		$(INST_MAN1DIR) $(DESTINSTALLMAN1DIR) \
-		$(INST_MAN3DIR) $(DESTINSTALLMAN3DIR)
+		read "$(PERL_ARCHLIB)/auto/$(FULLEXT)/.packlist" \
+		write "$(DESTINSTALLARCHLIB)/auto/$(FULLEXT)/.packlist" \
+		"$(INST_LIB)" "$(DESTINSTALLPRIVLIB)" \
+		"$(INST_ARCHLIB)" "$(DESTINSTALLARCHLIB)" \
+		"$(INST_BIN)" "$(DESTINSTALLBIN)" \
+		"$(INST_SCRIPT)" "$(DESTINSTALLSCRIPT)" \
+		"$(INST_MAN1DIR)" "$(DESTINSTALLMAN1DIR)" \
+		"$(INST_MAN3DIR)" "$(DESTINSTALLMAN3DIR)"
 	$(NOECHO) $(WARN_IF_OLD_PACKLIST) \
-		$(SITEARCHEXP)/auto/$(FULLEXT)
+		"$(SITEARCHEXP)/auto/$(FULLEXT)"
 
 
 pure_site_install :: all
 	$(NOECHO) $(MOD_INSTALL) \
-		read $(SITEARCHEXP)/auto/$(FULLEXT)/.packlist \
-		write $(DESTINSTALLSITEARCH)/auto/$(FULLEXT)/.packlist \
-		$(INST_LIB) $(DESTINSTALLSITELIB) \
-		$(INST_ARCHLIB) $(DESTINSTALLSITEARCH) \
-		$(INST_BIN) $(DESTINSTALLSITEBIN) \
-		$(INST_SCRIPT) $(DESTINSTALLSITESCRIPT) \
-		$(INST_MAN1DIR) $(DESTINSTALLSITEMAN1DIR) \
-		$(INST_MAN3DIR) $(DESTINSTALLSITEMAN3DIR)
+		read "$(SITEARCHEXP)/auto/$(FULLEXT)/.packlist" \
+		write "$(DESTINSTALLSITEARCH)/auto/$(FULLEXT)/.packlist" \
+		"$(INST_LIB)" "$(DESTINSTALLSITELIB)" \
+		"$(INST_ARCHLIB)" "$(DESTINSTALLSITEARCH)" \
+		"$(INST_BIN)" "$(DESTINSTALLSITEBIN)" \
+		"$(INST_SCRIPT)" "$(DESTINSTALLSITESCRIPT)" \
+		"$(INST_MAN1DIR)" "$(DESTINSTALLSITEMAN1DIR)" \
+		"$(INST_MAN3DIR)" "$(DESTINSTALLSITEMAN3DIR)"
 	$(NOECHO) $(WARN_IF_OLD_PACKLIST) \
-		$(PERL_ARCHLIB)/auto/$(FULLEXT)
+		"$(PERL_ARCHLIB)/auto/$(FULLEXT)"
 
 pure_vendor_install :: all
 	$(NOECHO) $(MOD_INSTALL) \
-		read $(VENDORARCHEXP)/auto/$(FULLEXT)/.packlist \
-		write $(DESTINSTALLVENDORARCH)/auto/$(FULLEXT)/.packlist \
-		$(INST_LIB) $(DESTINSTALLVENDORLIB) \
-		$(INST_ARCHLIB) $(DESTINSTALLVENDORARCH) \
-		$(INST_BIN) $(DESTINSTALLVENDORBIN) \
-		$(INST_SCRIPT) $(DESTINSTALLVENDORSCRIPT) \
-		$(INST_MAN1DIR) $(DESTINSTALLVENDORMAN1DIR) \
-		$(INST_MAN3DIR) $(DESTINSTALLVENDORMAN3DIR)
+		read "$(VENDORARCHEXP)/auto/$(FULLEXT)/.packlist" \
+		write "$(DESTINSTALLVENDORARCH)/auto/$(FULLEXT)/.packlist" \
+		"$(INST_LIB)" "$(DESTINSTALLVENDORLIB)" \
+		"$(INST_ARCHLIB)" "$(DESTINSTALLVENDORARCH)" \
+		"$(INST_BIN)" "$(DESTINSTALLVENDORBIN)" \
+		"$(INST_SCRIPT)" "$(DESTINSTALLVENDORSCRIPT)" \
+		"$(INST_MAN1DIR)" "$(DESTINSTALLVENDORMAN1DIR)" \
+		"$(INST_MAN3DIR)" "$(DESTINSTALLVENDORMAN3DIR)"
 
 
 doc_perl_install :: all
-	$(NOECHO) $(ECHO) Appending installation info to $(DESTINSTALLARCHLIB)/perllocal.pod
-	-$(NOECHO) $(MKPATH) $(DESTINSTALLARCHLIB)
+	$(NOECHO) $(ECHO) Appending installation info to "$(DESTINSTALLARCHLIB)/perllocal.pod"
+	-$(NOECHO) $(MKPATH) "$(DESTINSTALLARCHLIB)"
 	-$(NOECHO) $(DOC_INSTALL) \
 		"Module" "$(NAME)" \
-		"installed into" "$(INSTALLPRIVLIB)" \
+		"installed into" $(INSTALLPRIVLIB) \
 		LINKTYPE "$(LINKTYPE)" \
 		VERSION "$(VERSION)" \
 		EXE_FILES "$(EXE_FILES)" \
-		>> $(DESTINSTALLARCHLIB)/perllocal.pod
+		>> "$(DESTINSTALLARCHLIB)/perllocal.pod"
 
 doc_site_install :: all
-	$(NOECHO) $(ECHO) Appending installation info to $(DESTINSTALLARCHLIB)/perllocal.pod
-	-$(NOECHO) $(MKPATH) $(DESTINSTALLARCHLIB)
+	$(NOECHO) $(ECHO) Appending installation info to "$(DESTINSTALLARCHLIB)/perllocal.pod"
+	-$(NOECHO) $(MKPATH) "$(DESTINSTALLARCHLIB)"
 	-$(NOECHO) $(DOC_INSTALL) \
 		"Module" "$(NAME)" \
-		"installed into" "$(INSTALLSITELIB)" \
+		"installed into" $(INSTALLSITELIB) \
 		LINKTYPE "$(LINKTYPE)" \
 		VERSION "$(VERSION)" \
 		EXE_FILES "$(EXE_FILES)" \
-		>> $(DESTINSTALLARCHLIB)/perllocal.pod
+		>> "$(DESTINSTALLARCHLIB)/perllocal.pod"
 
 doc_vendor_install :: all
-	$(NOECHO) $(ECHO) Appending installation info to $(DESTINSTALLARCHLIB)/perllocal.pod
-	-$(NOECHO) $(MKPATH) $(DESTINSTALLARCHLIB)
+	$(NOECHO) $(ECHO) Appending installation info to "$(DESTINSTALLARCHLIB)/perllocal.pod"
+	-$(NOECHO) $(MKPATH) "$(DESTINSTALLARCHLIB)"
 	-$(NOECHO) $(DOC_INSTALL) \
 		"Module" "$(NAME)" \
-		"installed into" "$(INSTALLVENDORLIB)" \
+		"installed into" $(INSTALLVENDORLIB) \
 		LINKTYPE "$(LINKTYPE)" \
 		VERSION "$(VERSION)" \
 		EXE_FILES "$(EXE_FILES)" \
-		>> $(DESTINSTALLARCHLIB)/perllocal.pod
+		>> "$(DESTINSTALLARCHLIB)/perllocal.pod"
 
 
 uninstall :: uninstall_from_$(INSTALLDIRS)dirs
 	$(NOECHO) $(NOOP)
 
 uninstall_from_perldirs ::
-	$(NOECHO) $(UNINSTALL) $(PERL_ARCHLIB)/auto/$(FULLEXT)/.packlist
+	$(NOECHO) $(UNINSTALL) "$(PERL_ARCHLIB)/auto/$(FULLEXT)/.packlist"
 
 uninstall_from_sitedirs ::
-	$(NOECHO) $(UNINSTALL) $(SITEARCHEXP)/auto/$(FULLEXT)/.packlist
+	$(NOECHO) $(UNINSTALL) "$(SITEARCHEXP)/auto/$(FULLEXT)/.packlist"
 
 uninstall_from_vendordirs ::
-	$(NOECHO) $(UNINSTALL) $(VENDORARCHEXP)/auto/$(FULLEXT)/.packlist
+	$(NOECHO) $(UNINSTALL) "$(VENDORARCHEXP)/auto/$(FULLEXT)/.packlist"
 
 
 # --- MakeMaker force section:
@@ -1769,7 +1772,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
-FULLPERL      = /home/renato/perl5/perlbrew/perls/perl-5.20.3/bin/perl
+FULLPERL      = "/home/junior/perl5/perlbrew/perls/perl-5.24.0/bin/perl"
 
 $(MAP_TARGET) :: static $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -1777,7 +1780,7 @@ $(MAP_TARGET) :: static $(MAKE_APERL_FILE)
 $(MAKE_APERL_FILE) : $(FIRST_MAKEFILE) pm_to_blib
 	$(NOECHO) $(ECHO) Writing \"$(MAKE_APERL_FILE)\" for this $(MAP_TARGET)
 	$(NOECHO) $(PERLRUNINST) \
-		Makefile.PL DIR= \
+		Makefile.PL DIR="" \
 		MAKEFILE=$(MAKE_APERL_FILE) LINKTYPE=static \
 		MAKEAPERL=1 NORECURS=1 CCCDLFLAGS=
 
@@ -1835,10 +1838,11 @@ ppd :
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Static::Simple" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Unicode::Encoding" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Restarter" />' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '        <REQUIRE VERSION="5.9001" NAME="Catalyst::Runtime" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Runtime" VERSION="5.90010" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::TraitFor::Controller::DBIC::DoesPaging" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::View::TT" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="CatalystX-Eta::" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="CatalystX::Eta::Controller::REST" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Config::General" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Crypt::PasswdMD5" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="DBD::Pg" />' >> $(DISTNAME).ppd
@@ -1865,6 +1869,7 @@ ppd :
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Geo::Coder::Google" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="I18N::AcceptLanguage" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="JSON::" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="JSON::Any" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="JSON::XS" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="List::MoreUtils" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Log::Log4perl" />' >> $(DISTNAME).ppd
@@ -1875,6 +1880,7 @@ ppd :
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::NonMoose" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::Traits" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::Types::Email" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="MooseX::Types::JSON" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Spreadsheet::ParseExcel::Stream" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Spreadsheet::WriteExcel" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Spreadsheet::XLSX" />' >> $(DISTNAME).ppd
@@ -1885,11 +1891,12 @@ ppd :
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Test::Deep" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Test::More" VERSION="0.88" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Text2URI::" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Text::CSV" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Text::CSV_XS" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Text::Iconv" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="XML::Simple" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="namespace::autoclean" />' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-5.20" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-5.24" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    </IMPLEMENTATION>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '</SOFTPKG>' >> $(DISTNAME).ppd
@@ -2096,7 +2103,7 @@ pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 
 
 # End.
-# Postamble by Module::Install 1.16
+# Postamble by Module::Install 1.17
 # --- Module::Install::Admin::Makefile section:
 
 realclean purge ::
@@ -2131,14 +2138,14 @@ installdeps_notest ::
 	$(NOECHO) $(NOOP)
 
 upgradedeps ::
-	$(PERL) Makefile.PL --config= --upgradedeps=Math::Round,0,CatalystX-Eta,0,Test::More,0.88,Test::Deep,0,Catalyst::Runtime,5.90010,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Action::RenderView,0,Catalyst::Model::DBIC::Schema,0,Catalyst::Plugin::Authentication,0,Catalyst::Plugin::Authorization::Roles,0,Catalyst::Plugin::Session,0,Catalyst::Plugin::Session::Store::FastMmap,0,Catalyst::Plugin::Session::State::Cookie,0,Catalyst::Plugin::I18N::DBI,0,I18N::AcceptLanguage,0,App::Sqitch,0,Data::Section::Simple,0,Catalyst::Authentication::Store::DBIx::Class,0,Catalyst::Component::InstancePerContext,0,Catalyst::Plugin::Params::Nested,0,Catalyst::Controller::REST,0,Catalyst::TraitFor::Controller::DBIC::DoesPaging,0,DBIx::Class::PassphraseColumn,0,DBIx::Class::TimeStamp,0,Moose,0,namespace::autoclean,0,MooseX::Types::Email,0,Data::Diver,0,Data::Printer,0,Data::Manager,0,FindBin,0,JSON,0,JSON::XS,0,List::MoreUtils,0,String::Random,0,Crypt::PasswdMD5,0,DateTime::Duration,0,Catalyst::Plugin::Unicode::Encoding,0,DateTime::Format::Duration,0,DateTimeX::Easy,0,DateTime::Format::Pg,0,Catalyst::View::TT,0,Moose,0,DBIx::Class::Schema::Loader,0,Geo::Coder::Google,0,Text::Iconv,0,Email::Sender,0,Email::Sender::Simple,0,Spreadsheet::WriteExcel,0,Email::Sender::Transport::SMTP::TLS,0,Email::MIME,0,Spreadsheet::XLSX,0,Spreadsheet::ParseExcel::Stream,0,DateTime::Format::Excel,0,Math::Expression::Evaluator,0,Template,0,Catalyst::Plugin::Assets,0,Text::CSV_XS,0,Digest::MD5,0,Text2URI,0,MooseX::Traits,0,DBD::Pg,0,Statistics::Descriptive,0,XML::Simple,0,Furl,0,MooseX::NonMoose,0,Catalyst::Restarter,0,Data::Section::Simple,0,FindBin::libs,0,Log::Log4perl,0,Template::Tiny,0,MIME::Lite,0,Config::General,0
+	$(PERL) Makefile.PL --config= --upgradedeps=CatalystX-Eta,0,Test::More,0.88,Test::Deep,0,Catalyst::Runtime,5.90010,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Action::RenderView,0,Catalyst::Model::DBIC::Schema,0,Catalyst::Plugin::Authentication,0,Catalyst::Plugin::Authorization::Roles,0,Catalyst::Plugin::Session,0,Catalyst::Plugin::Session::Store::FastMmap,0,Catalyst::Plugin::Session::State::Cookie,0,Catalyst::Plugin::I18N::DBI,0,I18N::AcceptLanguage,0,App::Sqitch,0,Data::Section::Simple,0,MooseX::Types::JSON,0,JSON::Any,0,Catalyst::Authentication::Store::DBIx::Class,0,Catalyst::Component::InstancePerContext,0,Catalyst::Plugin::Params::Nested,0,Catalyst::Controller::REST,0,Catalyst::TraitFor::Controller::DBIC::DoesPaging,0,DBIx::Class::PassphraseColumn,0,DBIx::Class::TimeStamp,0,Moose,0,namespace::autoclean,0,MooseX::Types::Email,0,Data::Diver,0,Data::Printer,0,Data::Manager,0,FindBin,0,JSON,0,Math::Round,0,JSON::XS,0,List::MoreUtils,0,String::Random,0,Crypt::PasswdMD5,0,DateTime::Duration,0,Catalyst::Plugin::Unicode::Encoding,0,DateTime::Format::Duration,0,DateTimeX::Easy,0,DateTime::Format::Pg,0,Catalyst::View::TT,0,Moose,0,DBIx::Class::Schema::Loader,0,Geo::Coder::Google,0,Text::Iconv,0,Email::Sender,0,Email::Sender::Simple,0,Spreadsheet::WriteExcel,0,Email::Sender::Transport::SMTP::TLS,0,Email::MIME,0,Spreadsheet::XLSX,0,Spreadsheet::ParseExcel::Stream,0,DateTime::Format::Excel,0,Math::Expression::Evaluator,0,Template,0,Catalyst::Plugin::Assets,0,Text::CSV,0,Text::CSV_XS,0,Digest::MD5,0,Text2URI,0,MooseX::Traits,0,DBD::Pg,0,Statistics::Descriptive,0,XML::Simple,0,CatalystX::Eta::Controller::REST,0,Furl,0,MooseX::NonMoose,0,Catalyst::Restarter,0,Data::Section::Simple,0,FindBin::libs,0,Log::Log4perl,0,Template::Tiny,0,MIME::Lite,0,Config::General,0
 
 upgradedeps_notest ::
-	$(PERL) Makefile.PL --config=notest,1 --upgradedeps=Math::Round,0,CatalystX-Eta,0,Test::More,0.88,Test::Deep,0,Catalyst::Runtime,5.90010,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Action::RenderView,0,Catalyst::Model::DBIC::Schema,0,Catalyst::Plugin::Authentication,0,Catalyst::Plugin::Authorization::Roles,0,Catalyst::Plugin::Session,0,Catalyst::Plugin::Session::Store::FastMmap,0,Catalyst::Plugin::Session::State::Cookie,0,Catalyst::Plugin::I18N::DBI,0,I18N::AcceptLanguage,0,App::Sqitch,0,Data::Section::Simple,0,Catalyst::Authentication::Store::DBIx::Class,0,Catalyst::Component::InstancePerContext,0,Catalyst::Plugin::Params::Nested,0,Catalyst::Controller::REST,0,Catalyst::TraitFor::Controller::DBIC::DoesPaging,0,DBIx::Class::PassphraseColumn,0,DBIx::Class::TimeStamp,0,Moose,0,namespace::autoclean,0,MooseX::Types::Email,0,Data::Diver,0,Data::Printer,0,Data::Manager,0,FindBin,0,JSON,0,JSON::XS,0,List::MoreUtils,0,String::Random,0,Crypt::PasswdMD5,0,DateTime::Duration,0,Catalyst::Plugin::Unicode::Encoding,0,DateTime::Format::Duration,0,DateTimeX::Easy,0,DateTime::Format::Pg,0,Catalyst::View::TT,0,Moose,0,DBIx::Class::Schema::Loader,0,Geo::Coder::Google,0,Text::Iconv,0,Email::Sender,0,Email::Sender::Simple,0,Spreadsheet::WriteExcel,0,Email::Sender::Transport::SMTP::TLS,0,Email::MIME,0,Spreadsheet::XLSX,0,Spreadsheet::ParseExcel::Stream,0,DateTime::Format::Excel,0,Math::Expression::Evaluator,0,Template,0,Catalyst::Plugin::Assets,0,Text::CSV_XS,0,Digest::MD5,0,Text2URI,0,MooseX::Traits,0,DBD::Pg,0,Statistics::Descriptive,0,XML::Simple,0,Furl,0,MooseX::NonMoose,0,Catalyst::Restarter,0,Data::Section::Simple,0,FindBin::libs,0,Log::Log4perl,0,Template::Tiny,0,MIME::Lite,0,Config::General,0
+	$(PERL) Makefile.PL --config=notest,1 --upgradedeps=CatalystX-Eta,0,Test::More,0.88,Test::Deep,0,Catalyst::Runtime,5.90010,Catalyst::Plugin::ConfigLoader,0,Catalyst::Plugin::Static::Simple,0,Catalyst::Action::RenderView,0,Catalyst::Model::DBIC::Schema,0,Catalyst::Plugin::Authentication,0,Catalyst::Plugin::Authorization::Roles,0,Catalyst::Plugin::Session,0,Catalyst::Plugin::Session::Store::FastMmap,0,Catalyst::Plugin::Session::State::Cookie,0,Catalyst::Plugin::I18N::DBI,0,I18N::AcceptLanguage,0,App::Sqitch,0,Data::Section::Simple,0,MooseX::Types::JSON,0,JSON::Any,0,Catalyst::Authentication::Store::DBIx::Class,0,Catalyst::Component::InstancePerContext,0,Catalyst::Plugin::Params::Nested,0,Catalyst::Controller::REST,0,Catalyst::TraitFor::Controller::DBIC::DoesPaging,0,DBIx::Class::PassphraseColumn,0,DBIx::Class::TimeStamp,0,Moose,0,namespace::autoclean,0,MooseX::Types::Email,0,Data::Diver,0,Data::Printer,0,Data::Manager,0,FindBin,0,JSON,0,Math::Round,0,JSON::XS,0,List::MoreUtils,0,String::Random,0,Crypt::PasswdMD5,0,DateTime::Duration,0,Catalyst::Plugin::Unicode::Encoding,0,DateTime::Format::Duration,0,DateTimeX::Easy,0,DateTime::Format::Pg,0,Catalyst::View::TT,0,Moose,0,DBIx::Class::Schema::Loader,0,Geo::Coder::Google,0,Text::Iconv,0,Email::Sender,0,Email::Sender::Simple,0,Spreadsheet::WriteExcel,0,Email::Sender::Transport::SMTP::TLS,0,Email::MIME,0,Spreadsheet::XLSX,0,Spreadsheet::ParseExcel::Stream,0,DateTime::Format::Excel,0,Math::Expression::Evaluator,0,Template,0,Catalyst::Plugin::Assets,0,Text::CSV,0,Text::CSV_XS,0,Digest::MD5,0,Text2URI,0,MooseX::Traits,0,DBD::Pg,0,Statistics::Descriptive,0,XML::Simple,0,CatalystX::Eta::Controller::REST,0,Furl,0,MooseX::NonMoose,0,Catalyst::Restarter,0,Data::Section::Simple,0,FindBin::libs,0,Log::Log4perl,0,Template::Tiny,0,MIME::Lite,0,Config::General,0
 
 listdeps ::
-	@$(PERL) -le "print for @ARGV" Math::Round CatalystX-Eta
+	@$(PERL) -le "print for @ARGV" CatalystX-Eta
 
 listalldeps ::
-	@$(PERL) -le "print for @ARGV" Math::Round CatalystX-Eta Test::More Test::Deep Catalyst::Runtime Catalyst::Plugin::ConfigLoader Catalyst::Plugin::Static::Simple Catalyst::Action::RenderView Catalyst::Model::DBIC::Schema Catalyst::Plugin::Authentication Catalyst::Plugin::Authorization::Roles Catalyst::Plugin::Session Catalyst::Plugin::Session::Store::FastMmap Catalyst::Plugin::Session::State::Cookie Catalyst::Plugin::I18N::DBI I18N::AcceptLanguage App::Sqitch Data::Section::Simple Catalyst::Authentication::Store::DBIx::Class Catalyst::Component::InstancePerContext Catalyst::Plugin::Params::Nested Catalyst::Controller::REST Catalyst::TraitFor::Controller::DBIC::DoesPaging DBIx::Class::PassphraseColumn DBIx::Class::TimeStamp Moose namespace::autoclean MooseX::Types::Email Data::Diver Data::Printer Data::Manager FindBin JSON JSON::XS List::MoreUtils String::Random Crypt::PasswdMD5 DateTime::Duration Catalyst::Plugin::Unicode::Encoding DateTime::Format::Duration DateTimeX::Easy DateTime::Format::Pg Catalyst::View::TT Moose DBIx::Class::Schema::Loader Geo::Coder::Google Text::Iconv Email::Sender Email::Sender::Simple Spreadsheet::WriteExcel Email::Sender::Transport::SMTP::TLS Email::MIME Spreadsheet::XLSX Spreadsheet::ParseExcel::Stream DateTime::Format::Excel Math::Expression::Evaluator Template Catalyst::Plugin::Assets Text::CSV_XS Digest::MD5 Text2URI MooseX::Traits DBD::Pg Statistics::Descriptive XML::Simple Furl MooseX::NonMoose Catalyst::Restarter Data::Section::Simple FindBin::libs Log::Log4perl Template::Tiny MIME::Lite Config::General
+	@$(PERL) -le "print for @ARGV" CatalystX-Eta Test::More Test::Deep Catalyst::Runtime Catalyst::Plugin::ConfigLoader Catalyst::Plugin::Static::Simple Catalyst::Action::RenderView Catalyst::Model::DBIC::Schema Catalyst::Plugin::Authentication Catalyst::Plugin::Authorization::Roles Catalyst::Plugin::Session Catalyst::Plugin::Session::Store::FastMmap Catalyst::Plugin::Session::State::Cookie Catalyst::Plugin::I18N::DBI I18N::AcceptLanguage App::Sqitch Data::Section::Simple MooseX::Types::JSON JSON::Any Catalyst::Authentication::Store::DBIx::Class Catalyst::Component::InstancePerContext Catalyst::Plugin::Params::Nested Catalyst::Controller::REST Catalyst::TraitFor::Controller::DBIC::DoesPaging DBIx::Class::PassphraseColumn DBIx::Class::TimeStamp Moose namespace::autoclean MooseX::Types::Email Data::Diver Data::Printer Data::Manager FindBin JSON Math::Round JSON::XS List::MoreUtils String::Random Crypt::PasswdMD5 DateTime::Duration Catalyst::Plugin::Unicode::Encoding DateTime::Format::Duration DateTimeX::Easy DateTime::Format::Pg Catalyst::View::TT Moose DBIx::Class::Schema::Loader Geo::Coder::Google Text::Iconv Email::Sender Email::Sender::Simple Spreadsheet::WriteExcel Email::Sender::Transport::SMTP::TLS Email::MIME Spreadsheet::XLSX Spreadsheet::ParseExcel::Stream DateTime::Format::Excel Math::Expression::Evaluator Template Catalyst::Plugin::Assets Text::CSV Text::CSV_XS Digest::MD5 Text2URI MooseX::Traits DBD::Pg Statistics::Descriptive XML::Simple CatalystX::Eta::Controller::REST Furl MooseX::NonMoose Catalyst::Restarter Data::Section::Simple FindBin::libs Log::Log4perl Template::Tiny MIME::Lite Config::General
 
