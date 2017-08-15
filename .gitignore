@@ -14,3 +14,4 @@ api/smm_local.conf
 **blib**
 web/blib**
 api/blib**
+web/.build**
