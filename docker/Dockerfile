@@ -28,5 +28,15 @@ USER app
 ADD install-cpan-modules.sh /tmp/install-cpan-modules.sh
 RUN /tmp/install-cpan-modules.sh
 
-#ADD install-cpan-extra-modules.sh /tmp/install-cpan-extra-modules.sh
-#RUN /tmp/install-cpan-extra-modules.sh
+ADD install-cpan-extra-modules.sh /tmp/install-cpan-extra-modules.sh
+
+COPY Makefile_api.PL /tmp/Makefile.PL
+RUN /tmp/install-cpan-extra-modules.sh
+
+USER root
+RUN rm -rf /tmp/Makefile.PL
+
+USER app
+COPY Makefile_web.PL /tmp/Makefile.PL
+RUN /tmp/install-cpan-extra-modules.sh
+
