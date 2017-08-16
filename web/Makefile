@@ -19,9 +19,9 @@
 #     LICENSE => q[open_source]
 #     MIN_PERL_VERSION => q[5.014002]
 #     NAME => q[De::Olho::Nas::Metas]
-#     PREREQ_PM => { Carp=>q[0], Catalyst=>q[0], Catalyst::Controller=>q[0], Catalyst::Controller::REST=>q[0], Catalyst::Exception=>q[0], Catalyst::Model=>q[0], Catalyst::Model::DBIC::Schema=>q[0], Catalyst::Runtime=>q[5.80], Catalyst::Test=>q[0], Catalyst::View::TT=>q[0], CatalystX::RoleApplicator=>q[0], DBIx::Class::Core=>q[0], DBIx::Class::Schema=>q[0], DDP=>q[0], Data::Dumper=>q[0], DateTime=>q[0], DateTime::Format::DateParse=>q[0], DateTime::Format::Pg=>q[0], Digest::MD5=>q[0], Digest::SHA1=>q[0], Encode=>q[0], File::Copy=>q[0], File::Spec=>q[0], File::Temp=>q[0], FindBin=>q[0], Furl=>q[0], HTTP::Request=>q[0], HTTP::Request::Common=>q[0], I18N::AcceptLanguage=>q[0], IO::Handle=>q[0], IPC::Open3=>q[0], JSON=>q[0], JSON::MaybeXS=>q[0], JSON::XS=>q[0], LWP::UserAgent=>q[0], List::MoreUtils=>q[0], List::Util=>q[0], MRO::Compat=>q[0], Moose=>q[0], MooseX::Emulate::Class::Accessor::Fast=>q[0], MooseX::MarkAsMethods=>q[0], MooseX::NonMoose=>q[0], POSIX=>q[0], Package::Stash=>q[0], Path::Class=>q[0], Spreadsheet::WriteExcel=>q[0], Template::AutoFilter=>q[0], Test::More=>q[0], Text::CSV_XS=>q[0], URI=>q[0], URI::QueryParam=>q[0], XML::Simple=>q[0], base=>q[0], blib=>q[1.01], lib=>q[0], namespace::autoclean=>q[0], namespace::clean=>q[0], overload=>q[0], strict=>q[0], utf8=>q[0], warnings=>q[0] }
+#     PREREQ_PM => { Carp=>q[0], Catalyst=>q[0], Catalyst::Controller=>q[0], Catalyst::Controller::REST=>q[0], Catalyst::Exception=>q[0], Catalyst::Model=>q[0], Catalyst::Model::DBIC::Schema=>q[0], Catalyst::Plugin::Session::DynamicExpiry=>q[0], Catalyst::Plugin::Session::PerUser=>q[0], Catalyst::Plugin::Session::State::Cookie=>q[0], Catalyst::Plugin::Session::Store::File=>q[0], Catalyst::Plugin::Static::Simple=>q[0], Catalyst::Plugin::StatusMessage=>q[0], Catalyst::Runtime=>q[5.80], Catalyst::Test=>q[0], Catalyst::View::TT=>q[0], CatalystX::RoleApplicator=>q[0], DBIx::Class::Core=>q[0], DBIx::Class::Schema=>q[0], DDP=>q[0], Data::Dumper=>q[0], DateTime=>q[0], DateTime::Format::DateParse=>q[0], DateTime::Format::Pg=>q[0], Digest::MD5=>q[0], Digest::SHA1=>q[0], Encode=>q[0], File::Copy=>q[0], File::Spec=>q[0], File::Temp=>q[0], FindBin=>q[0], Furl=>q[0], HTTP::Request=>q[0], HTTP::Request::Common=>q[0], I18N::AcceptLanguage=>q[0], IO::Handle=>q[0], IPC::Open3=>q[0], JSON=>q[0], JSON::MaybeXS=>q[0], JSON::XS=>q[0], LWP::UserAgent=>q[0], List::MoreUtils=>q[0], List::Util=>q[0], MRO::Compat=>q[0], Moose=>q[0], MooseX::Emulate::Class::Accessor::Fast=>q[0], MooseX::MarkAsMethods=>q[0], MooseX::NonMoose=>q[0], POSIX=>q[0], Package::Stash=>q[0], Path::Class=>q[0], Spreadsheet::WriteExcel=>q[0], Template::AutoFilter=>q[0], Test::More=>q[0], Text::CSV_XS=>q[0], URI=>q[0], URI::QueryParam=>q[0], XML::Simple=>q[0], base=>q[0], blib=>q[1.01], lib=>q[0], namespace::autoclean=>q[0], namespace::clean=>q[0], overload=>q[0], strict=>q[0], utf8=>q[0], warnings=>q[0] }
 #     TEST_REQUIRES => { Catalyst::Test=>q[0], File::Spec=>q[0], File::Temp=>q[0], FindBin=>q[0], HTTP::Request=>q[0], IO::Handle=>q[0], IPC::Open3=>q[0], LWP::UserAgent=>q[0], Package::Stash=>q[0], Test::More=>q[0], blib=>q[1.01], lib=>q[0] }
-#     VERSION => q[20170815]
+#     VERSION => q[20170816]
 #     test => { TESTS=>q[t/*.t t/app/promisetraccker/*.t t/kml/*.t] }
 
 # --- MakeMaker post_initialize section:
@@ -61,11 +61,11 @@ DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
 NAME = De::Olho::Nas::Metas
 NAME_SYM = De_Olho_Nas_Metas
-VERSION = 20170815
+VERSION = 20170816
 VERSION_MACRO = VERSION
-VERSION_SYM = 20170815
+VERSION_SYM = 20170816
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 20170815
+XS_VERSION = 20170816
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -587,7 +587,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = De-Olho-Nas-Metas
-DISTVNAME = De-Olho-Nas-Metas-20170815
+DISTVNAME = De-Olho-Nas-Metas-20170816
 
 
 # --- MakeMaker macro section:
@@ -867,7 +867,7 @@ realclean_subdirs :
 # Delete temporary files (via clean) and also delete dist files
 realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
-	  $(MAKEFILE_OLD) $(FIRST_MAKEFILE) 
+	  $(FIRST_MAKEFILE) $(MAKEFILE_OLD) 
 	- $(RM_RF) \
 	  $(DISTVNAME) 
 
@@ -914,6 +914,12 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '  Catalyst::Exception: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  Catalyst::Model: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  Catalyst::Model::DBIC::Schema: '\''0'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Catalyst::Plugin::Session::DynamicExpiry: '\''0'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Catalyst::Plugin::Session::PerUser: '\''0'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Catalyst::Plugin::Session::State::Cookie: '\''0'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Catalyst::Plugin::Session::Store::File: '\''0'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Catalyst::Plugin::Static::Simple: '\''0'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Catalyst::Plugin::StatusMessage: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  Catalyst::Runtime: '\''5.80'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  Catalyst::View::TT: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  CatalystX::RoleApplicator: '\''0'\''' >> META_new.yml
@@ -957,7 +963,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '  strict: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  utf8: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) '  warnings: '\''0'\''' >> META_new.yml
-	$(NOECHO) $(ECHO) 'version: '\''20170815'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'version: '\''20170816'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'x_serialization_backend: '\''CPAN::Meta::YAML version 0.018'\''' >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
@@ -1014,6 +1020,12 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '            "Catalyst::Exception" : "0",' >> META_new.json
 	$(NOECHO) $(ECHO) '            "Catalyst::Model" : "0",' >> META_new.json
 	$(NOECHO) $(ECHO) '            "Catalyst::Model::DBIC::Schema" : "0",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Catalyst::Plugin::Session::DynamicExpiry" : "0",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Catalyst::Plugin::Session::PerUser" : "0",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Catalyst::Plugin::Session::State::Cookie" : "0",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Catalyst::Plugin::Session::Store::File" : "0",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Catalyst::Plugin::Static::Simple" : "0",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Catalyst::Plugin::StatusMessage" : "0",' >> META_new.json
 	$(NOECHO) $(ECHO) '            "Catalyst::Runtime" : "5.80",' >> META_new.json
 	$(NOECHO) $(ECHO) '            "Catalyst::View::TT" : "0",' >> META_new.json
 	$(NOECHO) $(ECHO) '            "CatalystX::RoleApplicator" : "0",' >> META_new.json
@@ -1061,7 +1073,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      }' >> META_new.json
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
 	$(NOECHO) $(ECHO) '   "release_status" : "stable",' >> META_new.json
-	$(NOECHO) $(ECHO) '   "version" : "20170815",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "version" : "20170816",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 2.27300"' >> META_new.json
 	$(NOECHO) $(ECHO) '}' >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
@@ -1375,6 +1387,12 @@ ppd :
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Exception" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Model" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Model::DBIC::Schema" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session::DynamicExpiry" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session::PerUser" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session::State::Cookie" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Session::Store::File" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::Static::Simple" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Plugin::StatusMessage" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::Runtime" VERSION="5.80" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::View::TT" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="CatalystX::RoleApplicator" />' >> $(DISTNAME).ppd

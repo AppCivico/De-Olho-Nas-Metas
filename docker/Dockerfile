@@ -34,9 +34,17 @@ COPY Makefile_api.PL /tmp/Makefile.PL
 RUN /tmp/install-cpan-extra-modules.sh
 
 USER root
-RUN rm -rf /tmp/Makefile.PL
+RUN rm -f /tmp/Makefile.PL
 
 USER app
 COPY Makefile_web.PL /tmp/Makefile.PL
 RUN /tmp/install-cpan-extra-modules.sh
 
+USER root
+RUN rm -f /tmp/Makefile.PL
+
+RUN mkdir /etc/service/donm-api
+ADD donm-api.sh /etc/service/donm-api/run
+
+RUN mkdir /etc/service/donm-web
+ADD donm-web.sh /etc/service/donm-web/run
