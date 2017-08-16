@@ -24,6 +24,7 @@ my %WriteMakefileArgs = (
     "Catalyst::Exception" => 0,
     "Catalyst::Model" => 0,
     "Catalyst::Model::DBIC::Schema" => 0,
+    "Catalyst::Plugin::Session::PerUser" => 0,
     "Catalyst::Runtime" => "5.80",
     "Catalyst::View::TT" => 0,
     "CatalystX::RoleApplicator" => 0,
@@ -81,7 +82,7 @@ my %WriteMakefileArgs = (
     "blib" => "1.01",
     "lib" => 0
   },
-  "VERSION" => 20170815,
+  "VERSION" => 20170816,
   "test" => {
     "TESTS" => "t/*.t t/app/promisetraccker/*.t t/kml/*.t"
   }
@@ -96,6 +97,7 @@ my %FallbackPrereqs = (
   "Catalyst::Exception" => 0,
   "Catalyst::Model" => 0,
   "Catalyst::Model::DBIC::Schema" => 0,
+  "Catalyst::Plugin::Session::PerUser" => 0,
   "Catalyst::Runtime" => "5.80",
   "Catalyst::Test" => 0,
   "Catalyst::View::TT" => 0,
