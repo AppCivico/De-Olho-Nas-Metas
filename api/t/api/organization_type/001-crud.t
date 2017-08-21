@@ -30,8 +30,6 @@ db_transaction {
         is( @$me, 4, '4 tipos de organizações' );
 
         $me = [ sort { $a->{id} <=> $b->{id} } @$me ];
-        use DDP;
-        p $me;
         is( $me->[3]{name}, 'Conselho Teste', 'listing ok' );
     };
 

@@ -28,8 +28,6 @@ db_transaction {
     stash_test 'user.list', sub {
         my ($me) = @_;
 
-        use DDP;
-        p $me;
         ok( $me = delete $me->{users}, 'users list exists' );
 
         is( @$me, 3, '3 users' );

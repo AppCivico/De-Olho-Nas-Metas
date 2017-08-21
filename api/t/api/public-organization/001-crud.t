@@ -12,9 +12,6 @@ db_transaction {
 
     # ao inves de
     my $list = rest_get '/public/councils';
-    use DDP;
-    p $list->{organizations}[0];
-
     #my $unique_project = rest_get '/public/goals/' . $list->{goals}[0]->{id};
 
     #p $unique_project;

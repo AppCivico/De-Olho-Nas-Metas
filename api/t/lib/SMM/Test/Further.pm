@@ -92,18 +92,13 @@ sub rest_post {
     my $data = pop;
     my %conf = @_;
     $url = join '/', @$url if ref $url eq 'ARRAY';
-    use DDP;
-    p $url;
 
     $conf{code} ||= exists $conf{is_fail} ? 400 : 201;
 
     my $name = $conf{name} || "POST $url";
-    p $name;
     my $stashkey = exists $conf{stash} ? $conf{stash} : undef;
-    p $stashkey;
 
     my $req;
-    p $url;
     if ( !exists $conf{files} ) {
         $req = POST $url, $data;
     }

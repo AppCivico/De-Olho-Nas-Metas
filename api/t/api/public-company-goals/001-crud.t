@@ -12,11 +12,8 @@ db_transaction {
 
     # ao inves de
     my $list = rest_get '/public/companies';
-    use DDP;
 
-    my $goals =
-      rest_get '/public/companies/' . $list->{companies}[0]->{id} . '/goals';
-    p $goals;
+    my $goals = rest_get '/public/companies/' . $list->{companies}[0]->{id} . '/goals';
 };
 
 done_testing;
