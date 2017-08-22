@@ -28,6 +28,7 @@ my %WriteMakefileArgs = (
     "Catalyst::Plugin::Authorization::Roles" => 0,
     "Catalyst::Plugin::ConfigLoader" => 0,
     "Catalyst::Plugin::Static::Simple" => 0,
+    "Catalyst::Restarter" => 0,
     "Catalyst::Runtime" => "5.90042",
     "CatalystX::Eta::Controller::Order" => 0,
     "CatalystX::Eta::Controller::REST" => 0,
@@ -114,7 +115,7 @@ my %WriteMakefileArgs = (
     "blib" => "1.01",
     "lib" => 0
   },
-  "VERSION" => 20170815,
+  "VERSION" => 20170822,
   "test" => {
     "TESTS" => "t/*.t t/api/company/*.t t/api/goal/*.t t/api/organization_type/*.t t/api/project/*.t t/api/public-company-budgets/*.t t/api/public-company-goals/*.t t/api/public-company/*.t t/api/public-goal/*.t t/api/public-objective/*.t t/api/public-organization/*.t t/api/public-project/*.t t/api/public-region/*.t t/api/public-subprefecture/*.t t/api/user/*.t"
   }
@@ -134,6 +135,7 @@ my %FallbackPrereqs = (
   "Catalyst::Plugin::Authorization::Roles" => 0,
   "Catalyst::Plugin::ConfigLoader" => 0,
   "Catalyst::Plugin::Static::Simple" => 0,
+  "Catalyst::Restarter" => 0,
   "Catalyst::Runtime" => "5.90042",
   "Catalyst::Test" => 0,
   "CatalystX::Eta::Controller::Order" => 0,

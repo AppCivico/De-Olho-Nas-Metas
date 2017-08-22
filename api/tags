@@ -1015,7 +1015,6 @@ Catalyst::Test q(SMM)	./script/change_first_character.pl	/^use Catalyst::Test q(
 Catalyst::Test q(SMM)	./script/complement_subpref_v2.pl	/^use Catalyst::Test q(SMM);$/;"	u
 Catalyst::Test q(SMM)	./script/crawler.pl	/^use Catalyst::Test q(SMM);$/;"	u
 Catalyst::Test q(SMM)	./script/create_goal-id_project.pl	/^use Catalyst::Test q(SMM);$/;"	u
-Catalyst::Test q(SMM)	./script/deploy.pl	/^use Catalyst::Test q(SMM);$/;"	u
 Catalyst::Test q(SMM)	./script/disqus_import.pl	/^use Catalyst::Test q(SMM);$/;"	u
 Catalyst::Test q(SMM)	./script/export_indicators.pl	/^use Catalyst::Test q(SMM);$/;"	u
 Catalyst::Test q(SMM)	./script/import_user_org.pl	/^use Catalyst::Test q(SMM);$/;"	u
@@ -1356,7 +1355,6 @@ FindBin qw($Bin)	./script/change_first_character.pl	/^use FindBin qw($Bin);$/;"	
 FindBin qw($Bin)	./script/complement_subpref_v2.pl	/^use FindBin qw($Bin);$/;"	u
 FindBin qw($Bin)	./script/crawler.pl	/^use FindBin qw($Bin);$/;"	u
 FindBin qw($Bin)	./script/daemon/email	/^use FindBin qw($Bin);$/;"	u
-FindBin qw($Bin)	./script/deploy.pl	/^use FindBin qw($Bin);$/;"	u
 FindBin qw($Bin)	./script/disqus_import.pl	/^use FindBin qw($Bin);$/;"	u
 FindBin qw($Bin)	./script/export_indicators.pl	/^use FindBin qw($Bin);$/;"	u
 FindBin qw($Bin)	./script/import_user_org.pl	/^use FindBin qw($Bin);$/;"	u
@@ -2139,7 +2137,6 @@ SMM::Schema	./script/complement_subpref_v2.pl	/^use SMM::Schema;$/;"	u
 SMM::Schema	./script/crawler.pl	/^use SMM::Schema;$/;"	u
 SMM::Schema	./script/create_goal-id_project.pl	/^use SMM::Schema;$/;"	u
 SMM::Schema	./script/daemon/lib/SMM/DaemonTools.pm	/^    require SMM::Schema;$/;"	r
-SMM::Schema	./script/deploy.pl	/^use SMM::Schema;$/;"	u
 SMM::Schema	./script/disqus_import.pl	/^use SMM::Schema;$/;"	u
 SMM::Schema	./script/export_indicators.pl	/^use SMM::Schema;$/;"	u
 SMM::Schema	./script/import_user_org.pl	/^use SMM::Schema;$/;"	u
@@ -2734,14 +2731,12 @@ lib "$Bin/../files"	./script/update-data-ps.pl	/^use lib "$Bin\/..\/files";$/;"	
 lib "$Bin/../files"	./script/update_company_cnpj.pl	/^use lib "$Bin\/..\/files";$/;"	u
 lib "$Bin/../files"	./script/update_goalid_project_id.pl	/^use lib "$Bin\/..\/files";$/;"	u
 lib "$Bin/../files"	./script/upload_goal-id_project.pl	/^use lib "$Bin\/..\/files";$/;"	u
-lib "$Bin/../lib"	./script/deploy.pl	/^use lib "$Bin\/..\/lib";$/;"	u
 lib './lib'	./script/acentos-regioes.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/add_column_budget.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/adjust_name_district.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/change_first_character.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/complement_subpref_v2.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/create_goal-id_project.pl	/^use lib '.\/lib';$/;"	u
-lib './lib'	./script/deploy.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/disqus_import.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/export_indicators.pl	/^use lib '.\/lib';$/;"	u
 lib './lib'	./script/import_user_org.pl	/^use lib '.\/lib';$/;"	u
@@ -3167,7 +3162,6 @@ resultset_find	./lib/SMM/Schema/Role/ResultsetFind.pm	/^sub resultset_find {$/;"
 resultset_search	./lib/SMM/Schema/Role/ResultsetFind.pm	/^sub resultset_search {$/;"	s
 root	./lib/SMM/Controller/API.pm	/^sub root : Chained('\/') : PathPart('') : CaptureArgs(0) {$/;"	s
 root	./lib/SMM/Controller/Root.pm	/^sub root : Chained('\/') PathPart('') CaptureArgs(0) {$/;"	s
-run_sql	./script/deploy.pl	/^sub run_sql {$/;"	s
 schema	./lib/SMM/Role/Verification/TransactionalActions/DBIC.pm	/^has schema => ($/;"	a
 search_goal	./lib/SMM/Controller/Update.pm	/^sub search_goal : Chained('base') : Args(0) : ActionClass('REST') { }$/;"	s
 search_type	./script/crawler.pl	/^has 'search_type'          => ( is => 'rw', isa => 'Int' );$/;"	a
@@ -3414,7 +3408,6 @@ utf8	./script/crawler_hernan.pl	/^use utf8;$/;"	u
 utf8	./script/create_goal-id_project.pl	/^use utf8;$/;"	u
 utf8	./script/daemon/bin/email.pl	/^use utf8;$/;"	u
 utf8	./script/daemon/lib/SMM/DaemonTools.pm	/^use utf8;$/;"	u
-utf8	./script/deploy.pl	/^use utf8;$/;"	u
 utf8	./script/disqus_import.pl	/^use utf8;$/;"	u
 utf8	./script/export_indicators.pl	/^use utf8;$/;"	u
 utf8	./script/import_user_org.pl	/^use utf8;$/;"	u
