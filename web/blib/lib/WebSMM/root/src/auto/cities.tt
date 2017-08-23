@@ -1,5 +1,0 @@
-[%IF vehicles.0.city_id%]
-    [%select_field('city_id', 'Cidade', array => select_cities, req => 1, value => vehicles.0.city_id)|none%]
-[%ELSE%]
-    [%select_field('city_id', 'Cidade', array => select_cities, req => 1)|none%]
-[%END%]

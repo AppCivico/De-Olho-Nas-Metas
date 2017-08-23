@@ -1,9 +1,0 @@
-<div>
-	<div class="rows">
-	<h2 class="sub-header">Editar categoria</h2>
-	<form role="form" method="post" class="form-horizontal" action="/admin/form/category/[%category_obj.id%]">
-		[%input_text('name','Nome', req=>1, value=>category_obj.name)|none%]
-		<button type="submit" class="btn btn-success pull-right">Salvar</button>
-	</form>
-	</div>
-</div>

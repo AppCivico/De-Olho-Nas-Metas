@@ -1,5 +1,0 @@
-    <div class="page-header bg-dark">
-        <h3>Adicione pelo menos uma rota</h3>
-        <p>Quanto mais detalhes nós tivermos sobre os seus roteiros, maior pode ser o seu ganho no fim do mês. Informe abaixo os destinos mais frequentes no seu dia a dia.</p>
-    </div>
-[%INCLUDE 'user/route/add.tt' NO_TITLE=>1%]

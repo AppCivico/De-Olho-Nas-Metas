@@ -1,6 +1,0 @@
-    <div class="page-header bg-dark">
-        <h3>Adicione pelo menos um estacionamento</h3>
-        <p></p>
-    </div>
-
-	[%INCLUDE 'user/parking/add.tt' NO_TITLE=>1%]

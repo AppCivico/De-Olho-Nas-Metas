@@ -1,1 +1,0 @@
-[%select_field('candidate_id',false, array => select_candidates, req=>0, default_first=>'Escolha o candidato')|none%]

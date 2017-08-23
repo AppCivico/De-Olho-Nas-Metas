@@ -1,5 +1,0 @@
-[%IF ! any_promise %]
-	[%select_field('category_id',false, array => select_categories, req=>0, default_first=>'Navegue pelos temas')|none%]
-[%ELSE%]
-	[%select_field('category_id',false, req=>0, default_first=>'Navegue pelos temas')|none%]
-[%END%]
