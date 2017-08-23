@@ -7,7 +7,7 @@
 	[%-CALL assets.include("js/slider/css/slider.css")%]
 	<script id="row_template" type="text/template">
 			{{#goals.length}}<h2 class="section-title">{{ goals.length}} [%('Meta{{#plural}}s{{/plural}} Encontrada{{#plural}}s{{/plural}}')%]</h2>{{/goals.length}}
-			{{ #goals }}	
+			{{ #goals }}
 			<div class="item row">
 				<div class="col-sm-10 nopadding">
 					<div class="contents pull-left">
@@ -36,7 +36,7 @@
 			{{/goals}}
 
 	</script>
-	
+
 	<!-- Twitter social plugin -->
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
@@ -76,7 +76,7 @@ $(document).ready(function () {
 	$('#progress-editor').slider()
   		.on('slide', function(ev){
     		$("#progress-value").val(ev.value);
-    		$('#progress-organization').css('width', ev.value+'%').attr('aria-valuenow', ev.value).html(ev.value+'%');    
+    		$('#progress-organization').css('width', ev.value+'%').attr('aria-valuenow', ev.value).html(ev.value+'%');
   	});
 	$("#progress-value").bind("keyup",function(e){
 		var value = 0;
@@ -86,7 +86,7 @@ $(document).ready(function () {
 		$('#progress-organization').css('width', value+'%').attr('aria-valuenow', value).html(value+'%');
 		$('#progress-editor').slider('setValue', value);
 	});
- 
+
   });
 </script>
 	<section class="map text-center">
@@ -173,7 +173,7 @@ $(document).ready(function () {
 
 			<div class="row">
 				<div class="col-sm-8">
-				
+
 					<div class="body">
 						<h1>[%l('Meta')%] [% goal_obj.id%] - [% goal_obj.name %]</h1>
 						<p>
@@ -247,7 +247,7 @@ $(document).ready(function () {
 						</table>
 						[% IF goal_obj.progress_count == 0%]
 							<p>[%l('Nenhum progresso até o momento')%].</p>
-						
+
 						[%END%]
 
 						<br />
@@ -260,14 +260,14 @@ $(document).ready(function () {
 			                </div>
 							[% END%]
 
-						[%ELSE%]	
+						[%ELSE%]
 						  <div class="progress-bar progress-bar-success progress-bar-violet progress-bar-striped" role="progressbar" aria-valuenow="[%goal_obj.goal_porcentages.owned%]" aria-valuemin="0" aria-valuemax="100" style="width: [%goal_obj.goal_porcentages.owned%]%;" id="progress-organization">
 							   [%goal_obj.goal_porcentages.owned%]%
 			              </div>
 						[%END%]
 						</div>
 					[% IF user_obj.role.counsil == '1' OR user_obj.role.counsil_master == 1 %]
-							
+
 						<div id="alert_progress"></div>
 						<div class="progress-editor violet col-xs-12">
 						[% IF goal_obj.progress_goal_counsil.size > 0 %]
@@ -276,12 +276,12 @@ $(document).ready(function () {
 							<input id="progress-value" size="3" value="[%gpc.owned%]"> %
 							[% END%]
 
-						[%ELSE%]	
+						[%ELSE%]
 							<input type="text" class="slider-editor" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[%goal_obj.goal_porcentages.owned%]" data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" id="progress-editor">
 							<input id="progress-value" size="3" value="[%goal_obj.goal_porcentages.owned%]"> %
 
 						[%END%]
-	
+
 							<button id="progress-save" class="btn btn-success">Salvar</button>
 						</div>
 						<br clear="all"/>
@@ -292,7 +292,7 @@ $(document).ready(function () {
 					<div class="image-gallery">
 					</div>
 
-				
+
 					<div class="projects">
 						<h3>[% goal_obj.project_qt.size %] Projeto[% goal_obj.project_qt.size > 1 ? "s" : "" %] da Meta</h3>
 						<ul class="list-arrow multi-column">
@@ -335,7 +335,7 @@ $(document).ready(function () {
 								<td colspan="3">[%l('Nenhum orçamento encontrado')%].</td>
 							</tr>
 					[% END %]
-	
+
 							</tbody>
 						</table>
 					</div>
@@ -378,18 +378,18 @@ $(document).ready(function () {
 								<td colspan="3">[%l('Nenhum comentário encontrado')%]</td>
 							</tr>
 					[% END %]
-	
+
 							</tbody>
 						</table>
 
 					</div>
 					<div id="alert_comment"></div>
-					<div>						
+					<div>
 						<textarea id="text_comment" class="form-control" rows="2"></textarea>
 						<button  id="comment" type="button" class="btn btn-brown" data-id="[% c.user.obj.id%]">[%l('Comentar')%]</button>
 					</div>
 
-    			-->	
+    			-->
 				</div>
 				<div class="col-sm-4">
 					<div class="list-box list-types">
@@ -401,7 +401,7 @@ $(document).ready(function () {
 							</li>
 						</ul>
 					</div>
-				    [% IF goal_obj.region.size > 0 %]	
+				    [% IF goal_obj.region.size > 0 %]
 					<div class="list-regions">
 						<span class="header">[%l('Distritos')%]</span>
 						<ul class="list-regions">
@@ -411,7 +411,7 @@ $(document).ready(function () {
 						</ul>
 					</div>
 					[% END %]
-					
+
 
 					<div id="map" style="height: 300px;">
 					</div>
@@ -429,7 +429,7 @@ $(document).ready(function () {
 					<div class="list-organizations">
 						<span class="header">[% goal_obj.organization.size%] [%l('Organizações')%]</span>
 						<ul class="list-organizations">
-							[% FOREACH organization IN goal_obj.organizations%]					
+							[% FOREACH organization IN goal_obj.organizations%]
 							<li>[% organization.name%]</li>
 							[% END %]
 						</ul>
@@ -439,7 +439,7 @@ $(document).ready(function () {
 					<div class="list-organizations">
 						<span class="header">[%business_names.size%] [%l('Empresa')%][% IF business_names.size > 1%]s[%END%] [%l('Relacionada')%][% IF business_names.size > 1%]s[% END %]</span>
 						<ul class="list-organizations">
-							[% FOREACH bn IN business_names%]					
+							[% FOREACH bn IN business_names%]
 							<li><a href="[% c.uri_for_action('/homefuncional/company/detail', [ bn.url] )%]">[% bn.name %]</a></li>
 							[% END %]
 						</ul>
@@ -447,6 +447,6 @@ $(document).ready(function () {
 					[%END%]
 				</div>
 			</div>
-			
+
 		</div>
     </section>

@@ -296,7 +296,7 @@ section p{
 }
 
 .about{
-	background-color: #fcf0cc;	
+	background-color: #fcf0cc;
 	color: #666056;
 }
 
@@ -683,7 +683,7 @@ section.metas-filtro h2.title{
 section.metas-filtro{
 	background-color: #4d4841;
 	color: #fff;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 section.metas-filtro form,
 section.metas-filtro .form{
@@ -708,7 +708,7 @@ section.metas-filtro form input,
 section.metas-filtro form select,
 section.metas-filtro .form input,
 section.metas-filtro .form select{
-	color: #59544b;	
+	color: #59544b;
 }
 section.metas-filtro form input,
 section.metas-filtro form select,
@@ -1064,7 +1064,7 @@ footer .menu-footer li a:hover{
 	.navbar-nav{
 		float: right!important;
 	}
-}  
+}
 @media(min-width:481px){
 	.metas-filtro .select-stylized select{
 		width: 90%;
@@ -1082,8 +1082,8 @@ footer .menu-footer li a:hover{
 	.menu-top .menu li a{
 		font-size: 0.8em;
 	}
-}	
-@media(max-width:767px) {	
+}
+@media(max-width:767px) {
 	body{
 		margin-top: 56px;
 	}

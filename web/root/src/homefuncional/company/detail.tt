@@ -7,7 +7,7 @@
 $(document).ready(function () {
        $('.priceformat').formatNumber({format:"#,###.00",locale: "br" });
 
-	   $('.titulo-tutorial').click(function(){ 
+	   $('.titulo-tutorial').click(function(){
 			$('.tutorial-contrato').toggle("slow");
 	   });
 });
@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 			<div class="row">
 				<div class="col-sm-8">
-				
+
 					<div class="body">
 						<h4 class="subtitle blue">[%l('Empresa')%]</h4>
 						<h1>[% company.name %]</h1>
@@ -32,7 +32,7 @@ $(document).ready(function () {
 						  <div class="facebook">
 																																																		       <!-- Social plugin facebook -->
 									<div class="fb-share-button" data-href="http://www.deolhonasmetas.org.br/company/[%company.name_url%]/detail" data-layout="button_count"></div>
-									
+
 								</div>
 						</div>
       <br>
@@ -65,7 +65,7 @@ $(document).ready(function () {
 									<td colspan="3">[%l('Nenhum valor encontrado')%].</td>
 								</tr>
 						[% END %]
-		
+
 								</tbody>
 							</table>
 
