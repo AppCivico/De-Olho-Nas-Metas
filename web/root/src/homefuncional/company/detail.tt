@@ -104,22 +104,6 @@ $(document).ready(function () {
 					<img src="/static/images/contratosPassoAPasso1.jpg" style="width:100%;float:left;">
 					<img src="/static/images/contratosPassoAPasso2.jpg" style="width:100%;float:left;">
 					</div>
-				
-					<div id="disqus_thread"></div>
-					<script type="text/javascript">
-						/* * * CONFIGURATION VARIABLES * * */
-						var disqus_shortname = 'donm';
-						
-						/* * * DON'T EDIT BELOW THIS LINE * * */
-						(function() {
-							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-						})();
-					</script>
-					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-
 				</div>
 
 				<div class="col-sm-4">
