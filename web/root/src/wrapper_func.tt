@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<head>
 
 <meta charset="UTF-8">
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -30,7 +30,6 @@
     <link href="/static/css/prism.css" rel="stylesheet">
     <link href="/static/css/images/favicon.png" rel="icon" type="image/x-icon" />
     <link href="/static/css/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
-</head>
 
     <script src="/static/js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
@@ -50,6 +49,7 @@
 
 <!--<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js"></script>-->
 
+</head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
