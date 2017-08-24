@@ -106,14 +106,6 @@
 						<a href="/login">[%l('Entrar')%]</a>
                     </li>
 					[%END%]
-			<div class="navbar-header page-scroll">
-			<ul class="select-langs list-unstyled">
-				 <li><a href="/lang/en" lang="en" hreflang="en"><img alt="English" title="English" src="//upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png" width="23" height="12"> </a></li>
-				 <li><a href="/lang/pt-br" lang="pt-br" hreflang="pt-br"><img alt="Português" title="Português" src="//upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/22px-Flag_of_Brazil.svg.png" width="17" height="12"></a></li>
-				 <li><a href="/lang/es" lang="es" hreflang="es"><img alt="Español" title="Español" src="//upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/23px-Flag_of_Spain.svg.png" width="22" height="12">  </a></li>
-			</ul>
-			</div>
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
