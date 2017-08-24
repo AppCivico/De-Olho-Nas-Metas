@@ -49,32 +49,6 @@
 
 $(document).ready(function () {
 
-  $('[data-toggle="tooltip"]').tooltip();
-
-  $('#follow_or_not').on('click', function () {
-	var id = $(this).data("id"),
-		url,
-		textview;
-	var button = $(this);
-	if ($(this).hasClass('follow')){
-		url = "/project/user_follow_project";
-		$(this).removeClass('follow');
-		textview = "[%l('Parar de Seguir')%]";
-	}else{
-		url = "/project/user_stop_follow";
-		$(this).addClass('follow');
-		textview = "[%l('Siga o Projeto')%]";
-	}
-	$(this).attr('disabled',true);
-	$.post( url, { user_id: $(this).data("id"), project_id: $('#projectid').val() },function( data ) {
-
-		$(button).find("span").html(textview);
-		$('.counter').html(data.project_count);
-
-		$(button).attr('disabled',false);
-    },"json")
-
-  })
    $('#late').on('click', function () {
 						$.post( '/project_accept_porcentage/' + $('#projectid').val() + '/accepted', { project_id: $('#projectid').val(), progress : 'late' },function( data ) {
 				  console.log(data);
@@ -252,24 +226,7 @@ $(document).ready(function () {
 
 					<div style="height: 300px;" id="map">
 					</div>
-					<div class="row social">
-						<div class="col-xs-6">
-							<div class="followers">
-								<div class="icon users2"></div> <span class="caption"><span class="counter">[% project_obj.follow_project %]</span> [% IF project_obj.follow_project > 1 %]seguidores [% ELSE %] seguidor [% END %]
-							</div>
-						</div>
 
-						[% IF c.user%]
-						<div id="follow" class="col-xs-6 text-right">
-							<button  type="button" id="follow_or_not" data-toggle="tooltip" data-placement="top" title="[%l('Acompanhar e receber notificações por email de cada atualização')%]" class="btn btn-brown custom-tooltip [% do_i_follow > 0 ? "" : "follow"%]" data-id="[% c.user.obj.id%]" autocomplete="off"><span>[% do_i_follow > 0 ? l('Parar de Seguir') : l('Siga o Projeto') %]</span></button>
-						</div>
-						[%ELSE%]
-						<div id="follow" class="col-xs-6 text-right">
-							<a class="btn btn-brown" href="/login" data-toggle="tooltip" data-placement="top" title="[%l('Acompanhar e receber notificações por email de cada atualização')%]" class="custom-tooltip">[%l('Siga o Projeto')%]</a>
-						</div>
-
-						[%END%]
-					</div>
 					<section class="statistics">
 						[% IF project_obj.percentage != ""%]
 						<h3>[%l('Progresso de acordo com a prefeitura')%]</h3>

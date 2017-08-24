@@ -1,32 +1,3 @@
-<script>
-
-$(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-  $('#follow_or_not').on('click', function () {
-	var id = $(this).data("id"),
-		url,
-		textview;
-	var button = $(this);
-	if ($(this).hasClass('follow')){
-		url = "/organization/user_follow_counsil";
-		$(this).removeClass('follow');
-		textview = "[%l('Parar de Seguir')%]";
-	}else{
-		url = "/organization/user_stop_counsil";
-		$(this).addClass('follow');
-		textview = "[%l('Siga o Conselho')%]";
-	}
-	$(this).attr('disabled',true);
-	$.post( url, { user_id: $(this).data("id"), counsil_id: $('#orgid').val() },function( data ) {
-
-		$(button).find("span").html(textview);
-		$('.counter').html(data.counsil_count);
-		$(button).attr('disabled',false);
-    },"json")
-
-  })
-});
-</script>
 	[%-CALL assets.include("js/maps.js")%]
 	[%-CALL assets.include("js/infobubble.min.js")%]
 	<section class="map text-center">
@@ -88,25 +59,7 @@ $(document).ready(function () {
 						</div>
 						<br clear="all"/>
 					</div>
-					<div class="row social">
 
-						<div class="col-xs-6 text-right">
-							<div class="followers">
-								<div class="icon users2"></div> <span class="caption"><span class="counter">[% organization_obj.follow_counsil %]</span> [% IF organization_obj.follow_counsil > 1 %]seguidores [% ELSE %] seguidor [% END %]
-							</div>
-						</div>
-
-						[% IF c.user%]
-						<div id="follow" class="col-xs-6 text-right">
-							<button  type="button" id="follow_or_not" data-toggle="tooltip" data-placement="top" title="[%l('Acompanhar e receber notificações por email de cada atualização')%]" class="btn btn-brown custom-tooltip [% do_i_follow > 0 ? "" : "follow"%]" data-id="[% c.user.obj.id%]" autocomplete="off"><span>[% do_i_follow > 0 ? "l('Parar de Seguir')" : "l('Siga o Conselho')" %]</span></button>
-						</div>
-						[%ELSE%]
-						<div id="follow" class="col-xs-7 text-right">
-							<a class="btn btn-brown" data-toggle="tooltip" data-placement="top" title="[%l('Acompanhar e receber notificações por email de cada atualização')%]" class="custom-tooltip" href="/login">[%l('Siga o Conselho')%]</a>
-						</div>
-						[%END%]
-
-					</div>
      				[% IF organization_obj.campaigns.size > 0%]
 					<div class="events">
 						<h3>[%l('Participe das Campanhas')%]</h3>
