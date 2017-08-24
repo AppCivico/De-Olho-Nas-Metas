@@ -84,8 +84,6 @@ $(document).ready(function () {
         $(this).button('loading');
     });
 
-    $('[data-toggle="tooltip"]').tooltip();
-
     $(document).on("click", "[data-send-click]", function () {
         $($(this).attr('data-send-click')).click();
     });
