@@ -1,5 +1,5 @@
 <script>
-	
+
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
   $('#follow_or_not').on('click', function () {
@@ -10,11 +10,11 @@ $(document).ready(function () {
 	if ($(this).hasClass('follow')){
 		url = "/organization/user_follow_counsil";
 		$(this).removeClass('follow');
-		textview = "[%l('Parar de Seguir')%]";	
+		textview = "[%l('Parar de Seguir')%]";
 	}else{
 		url = "/organization/user_stop_counsil";
 		$(this).addClass('follow');
-		textview = "[%l('Siga o Conselho')%]";	
+		textview = "[%l('Siga o Conselho')%]";
 	}
 	$(this).attr('disabled',true);
 	$.post( url, { user_id: $(this).data("id"), counsil_id: $('#orgid').val() },function( data ) {
@@ -23,7 +23,7 @@ $(document).ready(function () {
 		$('.counter').html(data.counsil_count);
 		$(button).attr('disabled',false);
     },"json")
-	
+
   })
 });
 </script>
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 			<div class="row">
 				<div class="col-sm-8">
-				
+
 					<div class="body">
 						<h1>Conselho participativo - [% organization_obj.name%]</h1>
 
@@ -89,7 +89,7 @@ $(document).ready(function () {
 						<br clear="all"/>
 					</div>
 					<div class="row social">
-							
+
 						<div class="col-xs-6 text-right">
 							<div class="followers">
 								<div class="icon users2"></div> <span class="caption"><span class="counter">[% organization_obj.follow_counsil %]</span> [% IF organization_obj.follow_counsil > 1 %]seguidores [% ELSE %] seguidor [% END %]
@@ -97,11 +97,11 @@ $(document).ready(function () {
 						</div>
 
 						[% IF c.user%]
-						<div id="follow" class="col-xs-6 text-right">							
+						<div id="follow" class="col-xs-6 text-right">
 							<button  type="button" id="follow_or_not" data-toggle="tooltip" data-placement="top" title="[%l('Acompanhar e receber notificações por email de cada atualização')%]" class="btn btn-brown custom-tooltip [% do_i_follow > 0 ? "" : "follow"%]" data-id="[% c.user.obj.id%]" autocomplete="off"><span>[% do_i_follow > 0 ? "l('Parar de Seguir')" : "l('Siga o Conselho')" %]</span></button>
 						</div>
 						[%ELSE%]
-						<div id="follow" class="col-xs-7 text-right">							
+						<div id="follow" class="col-xs-7 text-right">
 							<a class="btn btn-brown" data-toggle="tooltip" data-placement="top" title="[%l('Acompanhar e receber notificações por email de cada atualização')%]" class="custom-tooltip" href="/login">[%l('Siga o Conselho')%]</a>
 						</div>
 						[%END%]
@@ -117,7 +117,7 @@ $(document).ready(function () {
 									[% ymd_to_human(e.start_in).substr(0,2)%]
 								</div>
 								<div class="month">
-									
+
 									[% month_name(e.start_in)%]
 								</div>
 							</div>
@@ -128,7 +128,7 @@ $(document).ready(function () {
 									<div class="footer">
 										<div class="row">
 											<div class="col-sm-6">
-												<div class="icon clock"></div> De: [%ymd_to_human(e.start_in)%] Até: [%ymd_to_human(e.end_on)%] 
+												<div class="icon clock"></div> De: [%ymd_to_human(e.start_in)%] Até: [%ymd_to_human(e.end_on)%]
 											</div>
 											<div class="col-sm-6">
 												<div class="icon gps"></div> [%e.address%]
@@ -140,7 +140,7 @@ $(document).ready(function () {
 						</div>
      					[% END%]
 					</div>
-					[%END%] 
+					[%END%]
 
 					[% IF organization_obj.events.size > 0%]
 					<div class="events">
@@ -162,7 +162,7 @@ $(document).ready(function () {
 									<div class="footer">
 										<div class="row">
 											<div class="col-sm-6">
-												<div class="icon clock"></div> [%ymd_to_human(e.date)%] 
+												<div class="icon clock"></div> [%ymd_to_human(e.date)%]
 											</div>
 											<!--<div class="col-sm-6">
 												<div class="icon gps"></div> Nome do local
@@ -176,7 +176,7 @@ $(document).ready(function () {
 					</div>
 					[%END%]
 				</div>
-				<div class="col-sm-4">					
+				<div class="col-sm-4">
 					<div class="list-box list-violet">
 						<span class="header">[%l('Conselho participativo')%] - [% organization_obj.name%]</span>
 						<ul>
@@ -192,13 +192,13 @@ $(document).ready(function () {
 							<li><a href="[% c.uri_for_action('/homefuncional/subprefecture/detail',[organization_obj.subprefecture.id] ) %]">[% organization_obj.subprefecture.name%]</a></li>
 						</ul>
 					</div>
-					
+
 					<div id="map" style="height: 300px;">
 					</div>
-					
+
 				</div>
 			</div>
-			
+
 		</div>
-    </section>	
-	
+    </section>
+
