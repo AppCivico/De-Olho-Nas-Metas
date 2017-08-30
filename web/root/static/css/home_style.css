@@ -794,6 +794,7 @@ section.statistics .progress-bar{
 	color: #fff;
 	font-size: 2em;
 	padding: 10px;
+	max-width: 100%;
 }
 section.statistics .progress-bar-violet{
 	background-color: #795891;
