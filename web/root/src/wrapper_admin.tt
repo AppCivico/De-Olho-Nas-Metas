@@ -5,6 +5,7 @@
       type="image/png"
       href="/static/img/favicon.png" />
 <meta charset="UTF-8">
+<link rel="canonical" href="http://2013.deolhonasmetas.org.br[%c.req.uri.path_query%]">
 <title>[% template.title or site.title or title or 'De Olho nas Metas' %]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>

@@ -5,6 +5,7 @@
       type="image/png"
       href="/static/img/favicon.png" />
 <meta charset="UTF-8">
+<link rel="canonical" href="http://2013.deolhonasmetas.org.br[%c.req.uri.path_query%]">
 <title>[% template.title or site.title or title or 'Sistema de Monitoramento de Metas' %]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
