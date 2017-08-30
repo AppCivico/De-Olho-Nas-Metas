@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -47,9 +47,6 @@
                     </li>
                     <li>
                         <a href="regions">Regiões</a>
-                    </li>
-                    <li>
-                        <a href="organizations">Organizações</a>
                     </li>
                     <li>
                         <a href="campaigns">Campanhas</a>
@@ -140,7 +137,7 @@
 		<div class="container">
 
 			<h2 class="section-title">X Metas Encontradas</h2>
-		
+
 			<div class="item row">
 				<div class="col-sm-2 nopadding">
 					<div class="image pull-left"><img src="/static/css/images/meta01.jpg" border="0"></div>
@@ -235,12 +232,12 @@
 			</div>
 		</div>
     </section>
-	
+
     <section class="statistics">
 		<div class="container">
-		
+
 			<h2 class="section-title">Estatísticas de Metas e Projetos</h2>
-			
+
 			<div class="row">
 				<div class="chart-stats col-sm-3 text-center" color="darkblue">
 					<div class="chart">
@@ -257,7 +254,7 @@
 			</div>
 		</div>
     </section>
-	
+
 	<div class="image-gallery">
 		<div class="arrow left">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -270,8 +267,8 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		</div>
 	</div>
-	
-	
+
+
 	<footer>
 		<div class="menu">
 			<div class="container">
@@ -300,7 +297,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/static/lightbox/js/lightbox.js"></script>

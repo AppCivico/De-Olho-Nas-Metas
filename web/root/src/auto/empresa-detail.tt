@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -47,9 +47,6 @@
                     </li>
                     <li>
                         <a href="regions">Regiões</a>
-                    </li>
-                    <li>
-                        <a href="organizations">Organizações</a>
                     </li>
                     <li>
                         <a href="campaigns">Campanhas</a>
@@ -130,14 +127,14 @@
 
 			<div class="row">
 				<div class="col-sm-8">
-				
+
 					<div class="body">
 						<h1>Nome da Empresa</h1>
 						<p>
 							Liquorice brownie unerdwear.com bonbon brownie croissant croissant. Croissant sugar plum macaroon liquorice I love icing applicake I love gummies. Candy canes icing cotton candy macaroon lollipop. Pudding gummi bears oat cake bear claw chupa chups. I love wafer lollipop chocolate bar. Jujubes I love I love fruitcake I love gummi bears dragée pie ice cream. I love lollipop halvah jelly-o chupa chups liquorice candy canes unerdwear.com I love. Brownie sweet roll liquorice bonbon I love macaroon chocolate bar I love.
 						</p>
 					</div>
-					
+
 				</div>
 				<div class="col-sm-4">
 					<div class="list-box list-green">
@@ -149,14 +146,14 @@
 						</ul>
 					</div>
 					<br /><br />
-					
+
 				</div>
 			</div>
-			
+
 		</div>
-    </section>	
-	
-	
+    </section>
+
+
 	<footer>
 		<div class="menu">
 			<div class="container">
@@ -185,7 +182,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/static/lightbox/js/lightbox.js"></script>

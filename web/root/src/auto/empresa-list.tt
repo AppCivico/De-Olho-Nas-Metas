@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -48,9 +48,6 @@
                     </li>
                     <li>
                         <a href="regions">Regiões</a>
-                    </li>
-                    <li>
-                        <a href="organizations">Organizações</a>
                     </li>
                     <li>
                         <a href="campaigns">Campanhas</a>
@@ -130,7 +127,7 @@
 		<div class="container">
 
 			<h2 class="section-title">X Empresas</h2>
-			
+
 			<table class="dataTables blue">
 				<thead>
 					<tr>
@@ -172,12 +169,12 @@
 					</tr>
 				</tbody>
 			</table>
-			
+
 			<br /><br />
 		</div>
-    </section>	
-	
-	
+    </section>
+
+
 	<footer>
 		<div class="menu">
 			<div class="container">
@@ -206,7 +203,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/static/lightbox/js/lightbox.js"></script>

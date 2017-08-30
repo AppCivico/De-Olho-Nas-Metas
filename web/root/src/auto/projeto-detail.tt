@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -47,9 +47,6 @@
                     </li>
                     <li>
                         <a href="regions">Regiões</a>
-                    </li>
-                    <li>
-                        <a href="organizations">Organizações</a>
                     </li>
                     <li>
                         <a href="campaigns">Campanhas</a>
@@ -138,7 +135,7 @@
 
 			<div class="row">
 				<div class="col-sm-8">
-				
+
 					<div class="body">
 						<h1>[% project_obj.name %]</h1>
 						<p>
@@ -148,7 +145,7 @@
 
 					<div id="map-mock" class="project-map">
 					</div>
-					
+
 					<div class="row social">
 						<div class="col-xs-4">
 							<div class="social-share">
@@ -216,7 +213,7 @@
 						<div class="reply">
 							<div class="header">
 								<h3>Comente</h3>
-								Carrot cake topping gummi bears tootsie roll tart cupcake. Marshmallow jelly jujubes candy. 
+								Carrot cake topping gummi bears tootsie roll tart cupcake. Marshmallow jelly jujubes candy.
 							</div>
 							<div class="form">
 								<textarea cols="40" rows="5" name="reply" id="reply"></textarea>
@@ -224,13 +221,13 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 				<div class="col-sm-4">
 					<ul class="list-types project">
 						<li><div class="icon lamp"></div> [% goal_obj.objective.name%]</li>
 					</ul>
-					
+
 					<div class="list-regions">
 						<span class="header">Regiões</span>
 						<ul class="list-regions">
@@ -239,7 +236,7 @@
 							<li>São Miguel</li>
 						</ul>
 					</div>
-					
+
 					<div class="list-projects">
 						<span class="header">[% goal_obj.project_qt.size %] Projetos da Meta</span>
 						<ul class="list-projects">
@@ -248,7 +245,7 @@
 							[% END %]
 						</ul>
 					</div>
-					
+
 					<div class="list-organizations">
 						<span class="header">3 Organizações</span>
 						<ul class="list-organizations">
@@ -257,14 +254,14 @@
 							<li>Organização 03</li>
 						</ul>
 					</div>
-					
+
 				</div>
 			</div>
-			
+
 		</div>
-    </section>	
-	
-	
+    </section>
+
+
 	<footer>
 		<div class="menu">
 			<div class="container">
@@ -293,7 +290,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/static/lightbox/js/lightbox.js"></script>

@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -47,9 +47,6 @@
                     </li>
                     <li>
                         <a href="/region">Regiões</a>
-                    </li>
-                    <li>
-                        <a href="/organization">Conselhos</a>
                     </li>
                     <li>
                         <a href="/campaign">Campanhas</a>
@@ -106,48 +103,48 @@
 
 			<div class="row">
 				<div class="col-sm-7">
-				
+
 					<div class="col-sm-8 col-sm-offset-2">
-					
+
 						<h2>Acesso</h2>
-						
+
 						<form role="form" method="post" action="/form/login">
 						<div class="form-group">
 							<label>Nome de Usuário:</label>
 							<input type="email" name="email" class="form-control login-input">
 						</div>
-						
+
 						<div class="form-group">
 							<label>Senha:</label>
 							<input type="password" name="password" class="form-control login-input">
-							
+
 						<!--	<span class="forgot-login"><a href="">Esqueceu a senha?</a></span>-->
 						</div>
 						<button class="btn btn-brown pull-right">Entrar</button>
 						</form>
-					
-					</div>					
+
+					</div>
 				</div>
 				<div class="col-sm-5">
 					<div class="col-sm-8 col-sm-offset-2">
-					
+
 						<div class="text-center">
 							<br />
 							<img class="img-responsive" src="/static/css/images/img-login.png" border="0">
 							<br />
 							<p>Bem vindo ao sistema De Olho nas Metas. Faça o login ao lado ou cadastre-se através do link abaixo:</p>
-						    <form role="form" method="post" action="/cadastro">	
+						    <form role="form" method="post" action="/cadastro">
 								<button class="btn btn-success">Faça seu Cadastro</button>
 							</form>
 						</div>
-				
+
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
-    </section>	
-	
+    </section>
+
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/static/lightbox/js/lightbox.js"></script>

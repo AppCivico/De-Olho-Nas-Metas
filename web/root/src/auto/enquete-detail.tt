@@ -12,7 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-	
+
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -47,9 +47,6 @@
                     </li>
                     <li>
                         <a href="regions">Regiões</a>
-                    </li>
-                    <li>
-                        <a href="organizations">Organizações</a>
                     </li>
                     <li>
                         <a href="campaigns">Campanhas</a>
@@ -139,13 +136,13 @@
 
 	   <section class="metas-detail enquete-detail">
 		<div class="container">
-		
+
 			<h1>Nome da Enquete</h1>
-			
+
 			<div class="description">Unerdwear.com gummi bears bonbon. Cheese cake dessert cupcake. Pastry wafer brownie liquorice. Unerdwear.com gummi bears bonbon.</div>
-			
+
 			<div class="category">Tecnologia e inovação, Saúde e Meio Ambiente</div>
-			
+
 			<div class="row">
 				<div class="col-xs-4 text-center">
 					<button class="btn btn-grey">Desativar</button>
@@ -162,7 +159,7 @@
 				Formulário
 				<button class="btn btn-brown pull-right">Editar</button>
 			</h3>
-			
+
 			<div class="form-list">
 				<div class="row item">
 					<div class="col-xs-1">
@@ -182,11 +179,11 @@
 					</div>
 				</div>
 			</div>
-		
+
 		</div>
-    </section>	
-	
-	
+    </section>
+
+
 	<footer>
 		<div class="menu">
 			<div class="container">
@@ -215,7 +212,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/static/lightbox/js/lightbox.js"></script>
