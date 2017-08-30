@@ -218,7 +218,7 @@
     <script src="/static/js/home_site.js"></script>
 
 	[% assets.export("js")|none %]
-	<div id="google_translate_element" style="position: fixed; bottom: 0; left: 5%;"></div>
+	<div id="google_translate_element"></div>
 	<script type="text/javascript">
 	function googleTranslateElementInit() {
 	  new google.translate.TranslateElement({pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, gaTrack: true, gaId: 'UA-10515816-3'}, 'google_translate_element');

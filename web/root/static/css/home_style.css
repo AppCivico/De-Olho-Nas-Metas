@@ -1796,3 +1796,19 @@ pre.precode {
     max-height: 500px;
     overflow-x: auto;
 }
+
+#google_translate_element {
+	position: fixed;
+	bottom: 0;
+	left: 5%;
+	z-index: 10000;
+}
+@media (min-width: 1200px){
+	#google_translate_element {
+		margin-right: 5%;
+		top: 0;
+		right: 50%;
+		bottom: auto;
+		left: auto;
+	}
+}
